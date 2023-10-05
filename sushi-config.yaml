@@ -5,9 +5,9 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.fi.scheduling
 canonical: https://hl7.fi/fhir/finnish-scheduling
-name: Finnish FHIR Scheduling
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
+name: Finnish Scheduling
+title: Finnish Scheduling
+description: Finnish HL7 FHIR implementation guide for scheduling, published and maintained by HL7 Finland
 status: draft # draft | active | retired | unknown
 version: 0.1.0-cibuild
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
