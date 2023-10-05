@@ -1,0 +1,15 @@
+{
+  "package-id" : "hl7.fhir.fi.scheduling",
+  "version" : "0.1.0",
+  "path" : "https://hl7.fi/fhir/finnish-scheduling/0.1.0",
+  "mode" : "milestone",
+  "status" : "draft",
+  "sequence" : "STU 1",
+  "desc" : "First initial release, to verify publication process",
+  "descmd" : "First initial release, to verify publication process",
+  "first" : "true",
+  "title" : "Finnish Scheduling",
+  "ci-build" : "https://fhir.fi/finnish-scheduling",
+  "category" : "Workflow",
+  "introduction" : "Finnish HL7 FHIR implementation guide for scheduling, published and maintained by HL7 Finland"
+}
