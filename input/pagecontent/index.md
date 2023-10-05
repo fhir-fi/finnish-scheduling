@@ -1,3 +1,4 @@
 # Finnish FHIR Scheduling
 
-Feel free to modify this index page with your own awesome content!
+This is the Finnish HL7® FHIR® implementation guide for Scheduling.
+
