@@ -1,5 +1,6 @@
 {
   "resourceType": "Patient",
+  "id": "patient-with-multiple-identifiers",
   "identifier": [
     {
       "use": "official",
