@@ -1,0 +1,37 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="37cbcf84-ec38-4889-ae3c-877bace9bb84" />
+  <meta>
+    <lastUpdated value="2021-03-09T07:11:10.324+00:00" />
+  </meta>
+  <url value="http://hl7.fi/fhir/StructureDefinition/ChildAppointment" />
+  <name value="ChildAppointment" />
+  <status value="draft" />
+  <date value="2021-03-09T07:09:32.8974866+00:00" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="fhirpath" />
+    <expression value="Appointment" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.fi/fhir/StructureDefinition/ChildAppointment" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="Identifier" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

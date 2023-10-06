@@ -1,0 +1,33 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="3893dc5d-c30c-4781-b6ce-2af953c9ce8d" />
+  <meta>
+    <lastUpdated value="2021-03-08T11:51:38.662+00:00" />
+  </meta>
+  <url value="http://hl7.fi/fhir/StructureDefinition/FinnishAppointmentLocation" />
+  <name value="FinnishAppointmentLocation" />
+  <status value="draft" />
+  <date value="2020-01-02T13:46:59.0407037+00:00" />
+  <description value="Details for schedulable location" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Location" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Location" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Location.managingOrganization.identifier.system">
+      <path value="Location.managingOrganization.identifier.system" />
+      <definition value="THL - SOTE-organisaatiorekisteri 1.2.246.537.6.202.2008&#xD;&#xA;Valvira - Terveydenhuollon itsenäiset ammatinharjoittajat 1.2.246.537.6.203.2014" />
+    </element>
+  </differential>
+</StructureDefinition>

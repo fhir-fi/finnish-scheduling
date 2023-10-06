@@ -1,0 +1,62 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="HomeMunicipalityExtension" />
+  <meta>
+    <lastUpdated value="2021-03-02T11:20:20.274+00:00" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <div xmlns="http://www.w3.org/1999/xhtml">Structure for Home municipality of patient</div>
+  </text>
+  <url value="http://hl7.fi/fhir/StructureDefinition/HomeMunicipalityExtension" />
+  <name value="HomeMunicipalityExtension" />
+  <status value="draft" />
+  <date value="2021-03-02T11:15:37.631753+00:00" />
+  <description value="An extension for patient home municipality." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Patient" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <max value="1" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.fi/fhir/StructureDefinition/HomeMunicipalityExtension" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="Coding" />
+      </type>
+    </element>
+    <element id="Extension.value[x].system">
+      <path value="Extension.value[x].system" />
+      <short value="VRK/THL - Kuntakoodit" />
+      <definition value="VRK/THL - Kuntakoodit" />
+      <min value="1" />
+      <fixedUri value="urn:oid:1.2.246.537.6.21.2003" />
+    </element>
+    <element id="Extension.value[x].code">
+      <path value="Extension.value[x].code" />
+      <min value="1" />
+    </element>
+    <element id="Extension.value[x].display">
+      <path value="Extension.value[x].display" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

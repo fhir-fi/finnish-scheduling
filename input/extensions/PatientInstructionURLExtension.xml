@@ -1,0 +1,38 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="d8e721a0-0a93-4bba-9ddd-0a9aca0c8e33" />
+  <meta>
+    <lastUpdated value="2021-03-09T07:08:47.854+00:00" />
+  </meta>
+  <url value="http://hl7.fi/fhir/StructureDefinition/PatientInstructionURLExtension" />
+  <name value="PatientInstructionURLExtension" />
+  <status value="draft" />
+  <date value="2020-01-02T13:52:21.6173333+00:00" />
+  <description value="URL for patient instruction. Linkki potilasohjeeseen" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="fhirpath" />
+    <expression value="Appointment/PatientInstruction" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.fi/fhir/StructureDefinition/PatientInstructionURLExtension" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="url" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

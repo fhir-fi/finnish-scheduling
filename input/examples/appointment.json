@@ -1,0 +1,118 @@
+{
+  "resourceType": "Appointment",
+  "id": "605790",
+  "status": "booked",
+  "serviceCategory": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.246.537.6.50.201801",
+          "code": "SOTE19",
+          "display": "Perheoikeudelliset palvelut"
+        }
+      ]
+    }
+  ],
+  "serviceType": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.246.537.6.49.201501",
+          "code": "NC",
+          "display": "Isyyden selvittämispalvelu"
+        }
+      ]
+    }
+  ],
+  "appointmentType": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.246.537.6.884.2015",
+        "code": "10",
+        "display": "Kertakäynti toimipaikassa"
+      }
+    ]
+  },
+  "start": "2020-01-01T12:00:00+02:00",
+  "end": "2020-01-01T12:30:00+02:00",
+  "slot": [
+    {
+      "reference": "Slot/123456789"
+    }
+  ],
+  "created": "2019-12-01",
+  "comment": "Äidillä ei ole virallista henkilöllisyystodistusta",
+  "patientInstruction": "Vanhemmilla tulee olla mukana voimassa olevat henkilöllisyystodistukset sekä äidillä neuvolan äitiyskortti (todistus raskaudesta). Käynnin yhteydessä tehdään oikeusgeneettinen DNA-tutkimus. Ennen näytteen ottamista täyttyy olla syömättä, juomatta ja tupakoimatta vähintään 30 minuuttia",
+  "participant": [
+    {
+      "actor": {
+        "identifier": {
+          "value": "010101-123N",
+          "system": "urn:oid:1.2.246.21"
+        },
+        "display": "Pentti Potilas"
+      },
+      "status": "accepted",
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code": "SBJ",
+              "display": "subject"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "actor": {
+        "identifier": {
+          "value": "1.2.246.10.10303777.10.777"
+        },
+        "display": "Vastaanotto"
+      },
+      "status": "accepted",
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code": "LOC",
+              "display": "location"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "actor": {
+        "reference": "HealthcareService/example",
+        "display": "Lastenvalvojan vastaanotto"
+      },
+      "status": "accepted"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/NotificationInfoExtension",
+      "valueContactPoint": {
+        "system": "sms",
+        "value": "+3581234567"
+      }
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/AppointmentMutabilityExtension",
+      "extension": [
+        {
+          "url": "Cancellable",
+          "valueBoolean": true
+        },
+        {
+          "url": "Reschedulable",
+          "valueBoolean": false
+        }
+      ]
+    }
+  ]
+}

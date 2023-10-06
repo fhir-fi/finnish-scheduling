@@ -1,0 +1,29 @@
+{
+  "resourceType": "Patient",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:oid:1.2.246.21",
+      "value": "010101-123N",
+      "period": {
+        "start": "2019-01-01"
+      }
+    },
+    {
+      "use": "temp",
+      "value": "081181-9984",
+      "period": {
+        "start": "2018-11-12",
+        "end": "2019-01-01"
+      }
+    }
+  ],
+  "name": [
+    {
+      "family": "Testi",
+      "given": [
+        "Anna"
+      ]
+    }
+  ]
+}

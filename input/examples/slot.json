@@ -1,0 +1,43 @@
+{
+  "resourceType": "Slot",
+  "identifier": {
+    "value": "123456789"
+  },
+  "serviceCategory": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.246.537.6.50.201801",
+          "code": "SOTE19",
+          "display": "Perheoikeudelliset palvelut"
+        }
+      ]
+    }
+  ],
+  "serviceType": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.246.537.6.49.201501",
+          "code": "NC",
+          "display": "Isyyden selvittämispalvelu"
+        }
+      ]
+    }
+  ],
+  "appointmentType": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.246.537.6.884.2015",
+        "code": "10",
+        "display": "Kertakäynti toimipaikassa"
+      }
+    ]
+  },
+  "schedule": {
+    "reference": "Schedule/234567890"
+  },
+  "status": "free",
+  "start": "2020-01-01T12:00:00+02:00",
+  "end": "2020-01-01T12:30:00+02:00"
+}

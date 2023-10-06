@@ -1,0 +1,48 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="ef19597b-623d-4453-9f62-bc06de64e9c8" />
+  <meta>
+    <lastUpdated value="2021-03-02T11:06:59.579+00:00" />
+  </meta>
+  <extension url="http://hl7.fi/fhir/StructureDefinition/HomeMunicipalityExtension">
+    <valueCoding>
+      <system value="urn:oid:1.2.246.537.6.21.2003" />
+      <code value="564" />
+      <display value="Oulu" />
+    </valueCoding>
+  </extension>
+  <identifier>
+    <use value="official" />
+    <system value="urn:oid:1.2.246.21" />
+    <value value="010101-123N" />
+  </identifier>
+  <name>
+    <family value="Potilas" />
+    <given value="Pentti" />
+  </name>
+  <contact>
+    <relationship>
+      <coding>
+        <system value="urn:oid:1.2.246.537.6.882" />
+        <code value="1" />
+        <display value="Huoltaja" />
+      </coding>
+    </relationship>
+    <name>
+      <family value="Potilas" />
+      <given value="Pappa" />
+    </name>
+    <telecom>
+      <system value="sms" />
+      <value value="+3581234567" />
+    </telecom>
+  </contact>
+  <communication>
+    <language>
+      <coding>
+        <system value="urn:oid:1.2.246.537.5.40175" />
+        <code value="FI" />
+        <display value="Suomi" />
+      </coding>
+    </language>
+  </communication>
+</Patient>
