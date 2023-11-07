@@ -28,13 +28,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Setup IG publisher
-      run: docker-compose run runner bash -c "cd /workdir && chmod +x ./_updatePublisher.sh && ./_updatePublisher.sh --yes"
-    - name: Generate
-      run: docker-compose run runner bash -c "cd /workdir && chmod +x ./_genonce.sh  && ./_genonce.sh"
+    - name: Update the Docker image to the latest publisher
+      uses: docker://hl7fhir/ig-publisher-base:latest
+      with:
+        args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
+    - name: Run the IG publisher
+      uses: docker://hl7fhir/ig-publisher-base:latest
+      with:
+        args: java -jar ./input-cache/publisher.jar publisher -ig .
     - name: Setup Pages
       uses: actions/configure-pages@v2
-    - name: Upload artifact
+    - name: Upload artifacts
       uses: actions/upload-pages-artifact@v1
       with:
         path: './output'
