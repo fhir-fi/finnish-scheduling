@@ -1,0 +1,11 @@
+Links: <a style="color: var(--footer-hyperlink-text-color)" href="{{site.data.info.assets}}toc.html">Table of Contents</a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+  {%- for feedbacklink in site.data.features.feedback -%}
+    {%- if feedbacklink.dashboard -%}
+      | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="{{feedbacklink.dashboard.url}}">{{feedbacklink.dashboard.label}}</a>
+    {%- endif -%}
+  {%- endfor -%}
+  | <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.fi/fhir/finnish-scheduling/history.html">Version History</a>
+  | <a rel="license" href="https://raw.githubusercontent.com/fhir-fi/finnish-scheduling/master/LICENSE.md"><img style="border-style: none;" alt="CC0-1.0" src="cc0.png"/></a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/fhir-fi/finnish-scheduling">Source</a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/fhir-fi/finnish-scheduling/issues/new">Propose a change</a>
