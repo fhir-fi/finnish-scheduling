@@ -1,7 +1,7 @@
 {
   "package-id" : "hl7.fhir.fi.scheduling",
-  "version" : "0.1.0-cibuild",
-  "path" : "https://hl7.fi/fhir/finnish-scheduling/0.1.0-cibuild",
+  "version" : "0.2.0-cibuild",
+  "path" : "https://hl7.fi/fhir/finnish-scheduling/0.2.0-cibuild",
   "mode" : "working",
   "status" : "draft",
   "sequence" : "STU 1",
