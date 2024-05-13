@@ -1,2 +1,48 @@
-# finnish-scheduling
-The Finnish HL7® FHIR® Implementation Guide for Scheduling
+# Finnish HL7® FHIR® Implementation Guide for Scheduling
+
+This repo contains the source code for the
+[Finnish FHIR Scheduling](https://hl7.fi/fhir/finnish-scheduling/) implementation guide.
+
+# Development
+
+HL7 Finland is working on a consolidated implementation guide for scheduling. It will be based on
+two earlier implementation guides:
+
+* The [FinnishScheduling R4](https://simplifier.net/finnishschedulingr4) ig, published in February
+  2020
+* The [FinnishAppointment](https://simplifier.net/finnishappointment) ig, published in September
+  2021.
+
+This guide will consolidate these two specifications, and also incorporate aspects from the
+Kanta implementation guide for the apppointment booking document (not yet publicly available).
+
+The aim is to get first public STU1 version of the guide published on Q4/2024.
+
+Feel free to join the effort here in GitHub, or through our weekly meetings.
+
+
+# Office Hours
+
+We'll be hosting weekly office hours meetings. Each Thursday at 16.00 - 16.55.
+
+See the details and add the meetings to your own calendar from the
+[Google calendar](https://calendar.google.com/calendar/u/0?cid=MmRhYjIyOWYxNDc5MTYyNzE4NThlYjBmYTQ3MjBhYTQ4MDUzZTE1NGJiY2YxMjM4NmYzYTkyOGNmOGRkNTk0MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t)
+or the
+[iCal calendar](https://calendar.google.com/calendar/ical/2dab229f147916271858eb0fa4720aa48053e154bbcf12386f3a928cf8dd5940%40group.calendar.google.com/public/basic.ics). 
+
+Please feel free to join and discuss topics that are important to you.
+
+You can also propose to dedicate one of the sessions to discuss topics that are important to you.
+
+## *Myös suomeksi* (also in Finnish)
+
+*Valtaosa tiedosta tällä sivulla on englanniksi ja itse soveltamisopas tulee olemaan englanninkielinen. Viikottaiset tapaamiset voidaan kyllä hyvin käydä myös suomen kielellä, jos kaikki osallistujat ymmärtävät suomea.*
+
+
+# Contact
+
+Janne Heikkinen, janne.heikkinen@flowup.fi
+
+Mikael Rinnetmäki, mikael@sensotrend.com
+
+
