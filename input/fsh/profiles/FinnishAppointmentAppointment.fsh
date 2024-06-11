@@ -13,7 +13,7 @@ Description: "Profile for appointment (ajanvaraus) in Finnish Scheduling environ
 * extension contains
     ParentAppointment named ParentAppointment 0..1 and
     AppointmentMutabilityExtension named AppointmentMutability 0..1 and
-    $NotificationInfoExtension named NotificationInfoExtension 0..* and
+    NotificationInfoExtension named NotificationInfoExtension 0..* and
     ChildAppointment named ChildAppointment 0..*
 * extension[ParentAppointment] ^requirements = "12 Pääajanvaraus"
 * extension[AppointmentMutability] ^requirements = "95 Peruttavissa\r\n96 Siirrettävissä\r\n96.1 Peruutuksen tai siirron aikaraja"
@@ -32,11 +32,13 @@ Description: "Profile for appointment (ajanvaraus) in Finnish Scheduling environ
 * appointmentType.coding.system = "1.2.246.537.6.884.2015" (exactly)
 * appointmentType.coding.system ^short = "hl7fi: asiointitapa"
 * appointmentType.coding.system ^definition = "hl7fi: koodilla ilmaistu tieto ammattihenkilön ja asiakkaan välisen asioinnin tavasta"
+/*
 * patientInstruction.extension ^slicing.discriminator.type = #value
 * patientInstruction.extension ^slicing.discriminator.path = "url"
 * patientInstruction.extension ^slicing.rules = #open
 * patientInstruction.extension[PatientInstructionURL] only PatientInstructionURLExtension
 * patientInstruction.extension[PatientInstructionURL] ^sliceName = "PatientInstructionURL"
+*/
 * participant ^label = "Patient"
 * participant ^slicing.discriminator.type = #type
 * participant ^slicing.discriminator.path = "actor.type"

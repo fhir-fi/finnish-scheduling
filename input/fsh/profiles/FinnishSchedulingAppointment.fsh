@@ -35,7 +35,7 @@ Description: "Profile for appointment (ajanvaraus) in Finnish Scheduling environ
 * extension[ParentAppointment] ^requirements = "12 Pääajanvaraus"
 * extension[SelfServiceExtension] ^requirements = "84 AsiointiURL\r\n84.1 Järjestelmä tukee alaikäisen puolesta asiointia\r\n84.2 Järjestelmä tukee puolesta-asiointia valtakirjalla täysi-ikäisen puolesta\r\n84.3 Järjestelmä tukee rekisteripohjaista puolesta-asiointia täysi-ikäisen puolesta"
 * extension[ResourceCalendar] ^requirements = "74 Resurssin kalenteritunniste\r\n75 Resurssin nimi"
-* extension[ResourceCalendar].extension contains ResourceCalendarName 0..1
+// * extension[ResourceCalendar].extension contains ResourceCalendarName 0..1
 * extension[ReferralId] ^requirements = "24 Ajanvaraukseen liittyvän lähetteen tai pyynnön tunniste"
 * extension[RequestedService] ^requirements = "73 Varaustuote\r\n73.1 Varaustuotteen nimi"
 * extension[MiscAppointmentData] ^requirements = "91 Muu sisältö"
@@ -111,9 +111,11 @@ Description: "Profile for appointment (ajanvaraus) in Finnish Scheduling environ
 * patientInstruction.extension ^slicing.discriminator.type = #value
 * patientInstruction.extension ^slicing.discriminator.path = "url"
 * patientInstruction.extension ^slicing.rules = #open
+/*
 * patientInstruction.extension[PatientInstructionURL] only PatientInstructionURLExtension
 * patientInstruction.extension[PatientInstructionURL] ^sliceName = "PatientInstructionURL"
 * patientInstruction.extension[PatientInstructionURL] ^requirements = "100.1 Linkki potilasohjeeseen"
+*/
 * basedOn ..0
 * requestedPeriod ..1
 * requestedPeriod ^requirements = "35 Ajankohta, jolloin ajanvaraus ohjeistettu tehtäväksi"
