@@ -1,4 +1,4 @@
-Instance: GOFSH-GENERATED-ID-0
+Instance: patient-with-multiple-identifiers
 InstanceOf: Patient
 Usage: #example
 * identifier[0].use = #official
