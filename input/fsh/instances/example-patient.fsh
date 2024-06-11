@@ -1,4 +1,4 @@
-Instance: ef19597b-623d-4453-9f62-bc06de64e9c8
+Instance: example-patient
 InstanceOf: Patient
 Usage: #example
 * meta.lastUpdated = "2021-03-02T11:06:59.579+00:00"
