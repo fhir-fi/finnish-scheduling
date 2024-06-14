@@ -48,6 +48,10 @@ Description: "Base profile for appointment (ajanvaraus) in Finnish Scheduling en
 * identifier 1..*
 * identifier ^definition = "hl7fi: 18 Ajanvarauksen tunniste - mandatory, not recurring\r\n\r\nThis records identifiers associated with this appointment concern that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation)."
 * identifier.value 1..
+* identifier.use 0..
+* identifier.type 0..
+* identifier.period 0..
+* identifier.assigner 0..
 * status ^comment = "hl7fi: Requires mapping to *Ajanvarauksen tila* code set (1.2.246.537.6.881.201501). Other mappings ok apart from \"siirretty\" (rescheduled) ja \"suunniteltu\". \r\n\r\nIf the Appointment's status is \"cancelled\" then all participants are expected to have their calendars released for the appointment period, and as such any Slots that were marked as BUSY can be re-set to FREE.\n\nThis element is labeled as a modifier because the status contains the code entered-in-error that mark the Appointment as not currently valid."
 * status ^requirements = "19 Ajanvarauksen tila"
 * status from $codeserver-booking-status-page (required)
