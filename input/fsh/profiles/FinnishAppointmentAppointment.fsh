@@ -17,7 +17,7 @@ Description: "Profile for appointment (ajanvaraus) in Finnish Scheduling environ
     ChildAppointment named ChildAppointment 0..*
 * extension[ParentAppointment] ^requirements = "12 Pääajanvaraus"
 * extension[AppointmentMutability] ^requirements = "95 Peruttavissa\r\n96 Siirrettävissä\r\n96.1 Peruutuksen tai siirron aikaraja"
-* status from $classification-view-page.xhtml (required)
+* status from $codeserver-booking-status-page (required)
 * status ^short = "suunniteltu | tilattu | varattu | peruttu | siirretty | alkanut | toteutunut | ehdotettu | saapumatta"
 * cancelationReason.coding.system = "urn:oid:1.2.246.537.6.126.2008" (exactly)
 * cancelationReason.coding.system ^short = "THL - Palvelutapahtuman peruuntumisen tai siirtymisen syy"
