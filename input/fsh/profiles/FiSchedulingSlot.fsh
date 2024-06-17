@@ -1,13 +1,13 @@
-Profile: FinnishSchedulingSlot
+Profile: FiSchedulingSlot
 Parent: Slot
-Id: FinnishSchedulingSlot
+Id: FiSchedulingSlot
 Description: "Finnish profile for Slot"
-* ^url = "http://hl7.fi/fhir/StructureDefinition/FinnishSchedulingSlot"
+* ^url = "http://hl7.fi/fhir/StructureDefinition/FiSchedulingSlot"
 * ^status = #draft
 * identifier ..1
-* identifier.use ..0
-* identifier.period ..0
-* identifier.assigner ..0
+* identifier.use 0..
+* identifier.period 0..
+* identifier.assigner 0..
 * serviceCategory ..1
 * serviceCategory ^requirements = "71.1 Palvelun luokka"
 * serviceCategory.coding.system = "urn:oid:1.2.246.537.6.88.2008" (exactly)
