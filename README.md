@@ -3,6 +3,7 @@
 This repo contains the source code for the
 [Finnish FHIR Scheduling](https://hl7.fi/fhir/finnish-scheduling/) implementation guide.
 
+
 # Development
 
 HL7 Finland is working on a consolidated implementation guide for scheduling. It will be based on
@@ -25,10 +26,8 @@ Feel free to join the effort here in GitHub, or through our weekly meetings.
 
 We'll be hosting weekly office hours meetings. Each Thursday at 16.00 - 16.55.
 
-See the details and add the meetings to your own calendar from the
-[Google calendar](https://calendar.google.com/calendar/u/0?cid=MmRhYjIyOWYxNDc5MTYyNzE4NThlYjBmYTQ3MjBhYTQ4MDUzZTE1NGJiY2YxMjM4NmYzYTkyOGNmOGRkNTk0MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t)
-or the
-[iCal calendar](https://calendar.google.com/calendar/ical/2dab229f147916271858eb0fa4720aa48053e154bbcf12386f3a928cf8dd5940%40group.calendar.google.com/public/basic.ics). 
+Add the recurring meeting to your own calenda from the
+[https://calendar.app.google/cor5GG6yL4S3rAvq7](calendar invitation)!
 
 Please feel free to join and discuss topics that are important to you.
 
@@ -44,5 +43,3 @@ You can also propose to dedicate one of the sessions to discuss topics that are 
 Janne Heikkinen, janne.heikkinen@flowup.fi
 
 Mikael Rinnetmäki, mikael@sensotrend.com
-
-
