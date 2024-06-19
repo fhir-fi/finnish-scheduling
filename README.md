@@ -26,7 +26,7 @@ Feel free to join the effort here in GitHub, or through our weekly meetings.
 
 We'll be hosting weekly office hours meetings. Each Thursday at 16.00 - 16.55.
 
-Add the recurring meeting to your own calenda from the
+Add the recurring meeting to your own calendar from the
 [https://calendar.app.google/cor5GG6yL4S3rAvq7](calendar invitation)!
 
 Please feel free to join and discuss topics that are important to you.
