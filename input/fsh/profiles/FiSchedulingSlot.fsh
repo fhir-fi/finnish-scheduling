@@ -3,7 +3,6 @@ Parent: Slot
 Id: FiSchedulingSlot
 Description: "Finnish profile for Slot"
 * ^url = "http://hl7.fi/fhir/StructureDefinition/FiSchedulingSlot"
-* ^status = #draft
 * identifier ..1
 * identifier.use 0..
 * identifier.period 0..

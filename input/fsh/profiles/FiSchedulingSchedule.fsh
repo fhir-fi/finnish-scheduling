@@ -3,7 +3,6 @@ Parent: Schedule
 Id: FiSchedulingSchedule
 Description: "Finnish profile for Schedule"
 * ^url = "http://hl7.fi/fhir/StructureDefinition/FiSchedulingSchedule"
-* ^status = #draft
 * identifier 1..1
 * identifier.use 0..
 * identifier.period 0..
