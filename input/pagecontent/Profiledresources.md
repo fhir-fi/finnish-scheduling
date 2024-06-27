@@ -1,3 +1,0 @@
-## Profiled resources
-
-
