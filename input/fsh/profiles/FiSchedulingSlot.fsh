@@ -1,6 +1,6 @@
 Profile: FiSchedulingSlot
 Parent: Slot
-Id: FiSchedulingSlot
+Id: fi-scheduling-slot
 Description: "Finnish profile for Slot"
 * ^url = "http://hl7.fi/fhir/StructureDefinition/FiSchedulingSlot"
 * identifier ..1
