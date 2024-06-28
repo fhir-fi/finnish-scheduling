@@ -1,9 +1,9 @@
-Profile: FinnishSchedulingLocation
+Profile: FiSchedulingLocation
 Parent: Location
 Id: fi-scheduling-location
 Description: "Details for schedulable location"
 * ^meta.lastUpdated = "2020-01-02T13:46:59.349+00:00"
-* ^url = "http://hl7.fi/fhir/StructureDefinition/FinnishSchedulingLocation"
+* ^url = "http://hl7.fi/fhir/StructureDefinition/FiSchedulingLocation"
 * ^date = "2020-01-02T13:46:59.0407037+00:00"
 * identifier 1..1
 * identifier ^requirements = "79 Palveluntoteuttaja tai XX Palveluntoteuttajan palvelupisteen tunniste"
