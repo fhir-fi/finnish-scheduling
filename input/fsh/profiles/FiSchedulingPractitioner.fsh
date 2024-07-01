@@ -2,9 +2,7 @@ Profile: FiSchedulingPractitioner
 Parent: Practitioner
 Id: fi-scheduling-practitioner
 Description: "Practitioner details for Finnish Scheduling (including various Finnish social and healthcare professional id types)"
-* ^meta.lastUpdated = "2020-01-02T13:47:56.522+00:00"
 * ^url = "http://hl7.fi/fhir/StructureDefinition/FiSchedulingPractitioner"
-* ^date = "2020-01-02T13:47:56.2103709+00:00"
 * identifier 1..1
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"

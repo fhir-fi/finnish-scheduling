@@ -2,9 +2,7 @@ Profile: FiSchedulingPractitionerRole
 Parent: PractitionerRole
 Id: fi-scheduling-practitioner-role
 Description: "Role information for the practitioner."
-* ^meta.lastUpdated = "2020-01-02T13:48:29.299+00:00"
 * ^url = "http://hl7.fi/fhir/StructureDefinition/FiSchedulingPractitionerRole"
-* ^date = "2020-01-02T13:48:29.0008654+00:00"
 * identifier ..0
 * active ..0
 * period ..0

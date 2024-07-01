@@ -2,10 +2,7 @@ Profile: FiSchedulingPatient
 Parent: Patient
 Id: fi-scheduling-patient
 Description: "Resource profile for patient to be used in Finnish social and healthcare setting. Supports one official and one temporary id. Supports home municipality extension."
-* ^meta.versionId = "2"
-* ^meta.lastUpdated = "2020-01-02T11:46:32.409+00:00"
 * ^url = "http://hl7.fi/fhir/StructureDefinition/FiSchedulingPatient"
-* ^date = "2020-01-02T11:46:31.2851421Z"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
