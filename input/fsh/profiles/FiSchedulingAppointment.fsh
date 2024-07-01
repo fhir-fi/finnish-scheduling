@@ -58,18 +58,16 @@ Description: "Base profile for appointment (**ajanvaraus**) in Finnish Schedulin
 * cancelationReason ^requirements = "19.1 Ajanvarauksen perumisen tai siirtämisen syy\r\n\r\nMandatory, if cancellation status is equivalent to \"Siirretty\" or \"Peruttu\""
 * cancelationReason.coding.system = "urn:oid:1.2.246.537.6.126.2008" (exactly)
 * cancelationReason.coding.system ^short = "THL - Palvelutapahtuman peruuntumisen tai siirtymisen syy"
-* serviceCategory ..1
 * serviceCategory ^requirements = "71.1 Palvelun luokka"
 * serviceCategory.coding.system = "urn:oid:1.2.246.537.6.88.2008" (exactly)
 * serviceCategory.coding.system ^short = "AR/YDIN - Palvelutapahtumaluokitus"
 * serviceCategory.coding.system ^definition = "hl7fi: koodilla ilmaistu tieto palveluluokasta, johon ajanvaraus kohdistuu Huom. Palveluluokka ilmaistaan THL - Sosiaali- ja terveyspalvelujen luokituksen avulla."
-* serviceType 1..1
+* serviceType 1..*
 * serviceType ^requirements = "71 Palvelun nimi"
 * serviceType.coding.system = "urn:oid:1.2.246.537.6.49.201501" (exactly)
 * serviceType.coding.system ^short = "THL - Sosiaali- ja terveysalan palvelunimikkeistö"
 * serviceType.coding.system ^comment = "hl7fi: koodilla ilmaistu tieto palvelusta, johon ajanvaraus kohdistuu Huom. Palvelun nimi ilmaistaan THL - Sosiaali- ja terveysalan palvelunimikkeistön avulla.\r\n\r\nThe URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously."
 * serviceType.coding.system ^requirements = "71 Palvelun nimi"
-* specialty ..0
 * appointmentType ^requirements = "72 Asiointitapa"
 * appointmentType.coding.system = "1.2.246.537.6.884.2015" (exactly)
 * appointmentType.coding.system ^short = "hl7fi: asiointitapa"
@@ -94,14 +92,8 @@ Description: "Base profile for appointment (**ajanvaraus**) in Finnish Schedulin
 * reasonReference ^requirements = "56 kuvaus oireista/vaivasta ja \r\n57 riskitiedot (Condition/Note)"
 * reasonReference ^type.aggregation = #contained
 * reasonReference.type = "Condition" (exactly)
-* reasonReference.identifier ..0
-* reasonReference.display ..0
-* priority ..0
-* description ..0
-* supportingInformation ..0
 * start ^requirements = "86 Aikaväli"
 * end ^requirements = "86 Aikaväli"
-* minutesDuration ..0
 * created ^requirements = "38 Merkinnän kirjausaika"
 * comment ^short = "hl7fi: asiakkaalle tai ajanvarauksen katselijalle tarkoitettu vapaamuotoinen lisätieto"
 * comment ^definition = "hl7fi: asiakkaalle tai ajanvarauksen katselijalle tarkoitettu vapaamuotoinen lisätieto"
@@ -115,6 +107,4 @@ Description: "Base profile for appointment (**ajanvaraus**) in Finnish Schedulin
 // * patientInstruction.extension[PatientInstructionURL] only PatientInstructionURLExtension
 // * patientInstruction.extension[PatientInstructionURL] ^sliceName = "PatientInstructionURL"
 // * patientInstruction.extension[PatientInstructionURL] ^requirements = "100.1 Linkki potilasohjeeseen"
-* basedOn ..0
-* requestedPeriod ..1
 * requestedPeriod ^requirements = "35 Ajankohta, jolloin ajanvaraus ohjeistettu tehtäväksi"
