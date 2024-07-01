@@ -2,7 +2,6 @@ Profile: FiSchedulingPractitionerRole
 Parent: PractitionerRole
 Id: fi-scheduling-practitioner-role
 Description: "Role information for the practitioner."
-* ^url = "http://hl7.fi/fhir/StructureDefinition/FiSchedulingPractitionerRole"
 * identifier ..0
 * active ..0
 * period ..0

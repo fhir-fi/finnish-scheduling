@@ -1,0 +1,42 @@
+<ul>
+  {%- assign profiles = "" -%}
+  {%- for r_hash in site.data.structuredefinitions -%}
+    {%- assign r_type = r_hash[0] | split: "/"" | first -%}
+    {%- assign r = r_hash[1] -%}
+    {%- if r.kind == "resource" -%}
+      {%- unless r.example -%}
+        {%- unless r.type == "Extension" -%}
+          {%- assign prefix = r_type | slice: 0, 14 -%}
+          {%- if prefix == "fi-scheduling-" -%}
+            {%- assign escaped_description = r.description | replace: "%", "%25" -%}
+            {%- assign escaped_description = escaped_description | replace: ",", "%20" -%}
+            {%- assign escaped_description = escaped_description | replace: ":", "%3A" -%}
+            {%- assign profiles = profiles | append: r.path | append: ":" | append: r.title | append: ":" | append: escaped_description -%}
+            {%- unless forloop.last -%}
+              {%- assign profiles = profiles | append: "," -%}
+            {%- endunless -%}
+          {%- endif -%}
+        {%- endunless -%}
+      {%- endunless -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign profiles = profiles | split: "," -%}
+  {%- assign profiles = profiles | sort | uniq -%}
+
+  {%- for profile in profiles -%}
+    {%- assign properties = profile | split: ":" -%}
+    {%- assign pagepath = properties.first -%}
+    {%- assign pagetitle = properties[1] -%}
+    {%- assign description = properties.last -%}
+    {%- assign description = description | replace: "%3A", ":" -%}
+    {%- assign description = description | replace: "%20", "," -%}
+    {%- assign description = description | replace: "%25", "%" -%}
+    {%- assign description = description | replace: "(*", "(<i>" -%}
+    {%- assign description = description | replace: "*)", "</i>)" -%}
+  <li>
+    <a href="{{ pagepath }}">{{ pagetitle }}</a>
+    <p>{{ description }}</p>
+  </li>
+  {%- endfor -%}
+
+</ul>

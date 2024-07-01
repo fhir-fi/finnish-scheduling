@@ -2,7 +2,6 @@ Profile: FiSchedulingHealthcareService
 Parent: HealthcareService
 Id: fi-scheduling-healthcare-service
 Description: "Finnish profile for healthcare service."
-* ^url = "http://hl7.fi/fhir/StructureDefinition/FiSchedulingHealthcareService"
 * category ..1
 * category ^requirements = "71.1 Palvelun luokka"
 * category.coding.system = "urn:oid:1.2.246.537.6.88.2008" (exactly)
