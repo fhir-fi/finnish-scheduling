@@ -1,8 +1,7 @@
 Profile: FiSchedulingPractitioner
 Parent: Practitioner
 Id: fi-scheduling-practitioner
-Description: "Practitioner details for Finnish Scheduling (including various Finnish social and healthcare professional id types)"
-* ^url = "http://hl7.fi/fhir/StructureDefinition/FiSchedulingPractitioner"
+Description: "Practitioner details for Finnish Scheduling (including various Finnish social and healthcare professional id types)."
 * identifier 1..1
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"

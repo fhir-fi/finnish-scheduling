@@ -1,8 +1,7 @@
 Profile: FiSchedulingAppointment
 Parent: Appointment
-Id: FiSchedulingAppointment
-Description: "Base profile for appointment (**ajanvaraus**) in Finnish Scheduling environment. The contents is based on the scheduling appointment specification."
-* ^url = "http://hl7.fi/fhir/StructureDefinition/FiSchedulingAppointment"
+Id: fi-scheduling-appointment
+Description: "Base profile for appointment (*ajanvaraus*) in Finnish Scheduling environment. The contents is based on the scheduling appointment specification."
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
