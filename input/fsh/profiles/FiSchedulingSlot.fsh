@@ -2,20 +2,20 @@ Profile: FiSchedulingSlot
 Parent: Slot
 Id: fi-scheduling-slot
 Description: "Finnish profile for Slot."
-* identifier ..1
-* identifier.use 0..
-* identifier.period 0..
-* identifier.assigner 0..
-* serviceCategory ..1
 * serviceCategory ^requirements = "71.1 Palvelun luokka"
-* serviceCategory.coding.system = "urn:oid:1.2.246.537.6.88.2008" (exactly)
+// We could create a slicing definition that demands that one of the categories is from
+// AR/YDIN - Palvelutapahtumaluokitus.
+// Anyway, it is not appropriate to not allow for other categories to be present.
+//* serviceCategory.coding.system = "urn:oid:1.2.246.537.6.88.2008" (exactly)
 * serviceCategory.coding.system ^short = "AR/YDIN - Palvelutapahtumaluokitus"
-* serviceType 1..1
+* serviceType 1..
 * serviceType ^requirements = "71 Palvelun nimi"
-* serviceType.coding.system = "urn:oid:1.2.246.537.6.49.201501" (exactly)
+//* serviceType.coding.system = "urn:oid:1.2.246.537.6.49.201501" (exactly)
 * serviceType.coding.system ^short = "THL - Sosiaali- ja terveysalan palvelunimikkeistö"
-* specialty ..0
 * appointmentType ^requirements = "72 Asiointitapa"
-* appointmentType.coding ..1
-* appointmentType.coding.system = "urn:oid:1.2.246.537.6.884.2015" (exactly)
-* appointmentType.coding.system ^short = "THL - Asiointitapa"
+// We could create a slicing definition that demands that one of the codings is from
+// THL - Asiointitapa.
+// Anyway, it is not appropriate to not allow for other types to be present.
+// * appointmentType.coding ..1
+// * appointmentType.coding.system = "urn:oid:1.2.246.537.6.884.2015" (exactly)
+// * appointmentType.coding.system ^short = "THL - Asiointitapa"
