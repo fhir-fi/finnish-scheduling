@@ -2,7 +2,6 @@ Profile: FiSchedulingHealthcareService
 Parent: HealthcareService
 Id: fi-scheduling-healthcare-service
 Description: "Finnish profile for healthcare service."
-* ^url = "http://hl7.fi/fhir/StructureDefinition/FiSchedulingHealthcareService"
 // We could create a slicing definition that demands that one of the categories is from
 // Palvelutapahtumaluokitus. Let's see if we want even this. Anyway, it is not appropriate to not
 // allow for other categories to be present.

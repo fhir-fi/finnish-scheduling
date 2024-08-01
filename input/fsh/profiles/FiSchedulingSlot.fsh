@@ -1,8 +1,7 @@
 Profile: FiSchedulingSlot
 Parent: Slot
 Id: fi-scheduling-slot
-Description: "Finnish profile for Slot"
-* ^url = "http://hl7.fi/fhir/StructureDefinition/FiSchedulingSlot"
+Description: "Finnish profile for Slot."
 * serviceCategory ^requirements = "71.1 Palvelun luokka"
 // We could create a slicing definition that demands that one of the categories is from
 // AR/YDIN - Palvelutapahtumaluokitus.

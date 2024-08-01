@@ -1,8 +1,7 @@
 Profile: FiSchedulingLocation
 Parent: Location
 Id: fi-scheduling-location
-Description: "Details for schedulable location"
-* ^url = "http://hl7.fi/fhir/StructureDefinition/FiSchedulingLocation"
+Description: "Details for schedulable location."
 * identifier 1..
 * identifier ^requirements = "79 Palveluntoteuttaja tai XX Palveluntoteuttajan palvelupisteen tunniste"
 * identifier.value ^requirements = "79 Palveluntoteuttaja tai XX Palveluntoteuttajan palvelupisteen tunniste"

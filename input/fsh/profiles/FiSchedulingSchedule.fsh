@@ -1,8 +1,7 @@
 Profile: FiSchedulingSchedule
 Parent: Schedule
 Id: fi-scheduling-schedule
-Description: "Finnish profile for Schedule"
-* ^url = "http://hl7.fi/fhir/StructureDefinition/FiSchedulingSchedule"
+Description: "Finnish profile for Schedule."
 * identifier 1..
 * identifier.use 0..
 * identifier.period 0..

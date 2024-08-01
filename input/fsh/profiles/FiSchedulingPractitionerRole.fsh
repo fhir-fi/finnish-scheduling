@@ -2,7 +2,6 @@ Profile: FiSchedulingPractitionerRole
 Parent: PractitionerRole
 Id: fi-scheduling-practitioner-role
 Description: "Role information for the practitioner."
-* ^url = "http://hl7.fi/fhir/StructureDefinition/FiSchedulingPractitionerRole"
 * specialty ^requirements = "Hilmo - Terveydenhuollon erikoisalat"
 // We could create a slicing definition that demands that one of the categories is from
 // Hilmo - Terveydenhuollon erikoisalat.
