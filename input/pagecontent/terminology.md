@@ -23,5 +23,5 @@
 </ul>
 
 There are also many other notable terminologies used in Finland. Please see the
-[terminology section](https://hl7.fi/fhir/finnish-base-profiles/terminology.html) of the Finnish
-FHIR Base Profiles specification. 
+[terminology section of the Finnish FHIR Base Profiles](https://hl7.fi/fhir/finnish-base-profiles/terminology.html)
+specification. 

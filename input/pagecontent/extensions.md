@@ -20,7 +20,7 @@ Finland. Most notably the ones for the national Kanta system, in several impleme
 * [Kanta yhteiset FHIR- ja REST-rajapintamäärittelyt](https://simplifier.net/kanta-yhteiset-fhir)
   includes definitions shared by several other Kanta implementation guides.
 * [Kanta Potilastiedon arkiston FHIR R4](https://simplifier.net/kanta-potilastiedon-arkiston-fhir-r4)
-  included specifications for patient data stored in Kanta.
+  includes specifications for patient data stored in Kanta.
 * [Kanta FHIR Prescription R4](https://simplifier.net/PrescriptionR4) includes specifications for
   data on prescriptions
 * [Kanta sosiaalihuolto R4](https://simplifier.net/Kanta-sosiaalihuolto-R4) includes specifications
