@@ -1,11 +1,11 @@
 {
   "package-id" : "hl7.fhir.fi.scheduling",
-  "version" : "0.2.0-cibuild",
-  "path" : "https://hl7.fi/fhir/finnish-scheduling/0.2.0-cibuild",
-  "mode" : "working",
+  "version" : "0.2.0",
+  "path" : "https://hl7.fi/fhir/finnish-scheduling/0.2.0",
+  "mode" : "milestone",
   "status" : "draft",
   "sequence" : "STU 1",
-  "desc" : "Continuous integration build",
-  "descmd" : "Continuous integration build",
+  "desc" : "Snapshot 0.2.0",
+  "descmd" : "Snapshot release to support discussions during development.",
   "first" : "false"
 }
