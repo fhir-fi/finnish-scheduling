@@ -43,8 +43,6 @@ Usage: #definition
     * code = #5
     * display = "Siirretty"
     * target
-      * code = #cancelled
-      * display = "Cancelled"
       * equivalence = #unmatched
       * comment = "There is no status for rescheduled appointments in FHIR. This code SHOULD be mapped to cancelled, if required. Note that this code is deprecated."
   * element[+]
