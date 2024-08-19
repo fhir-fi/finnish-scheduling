@@ -6,7 +6,7 @@ Description: "Base profile for appointment (*ajanvaraus*) in Finnish Scheduling 
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
-    ServiceEventExtension named ServiceEvent 0..1 and
+    ServiceEvent named ServiceEvent 0..1 and
     TopicIdExtension named TopicId 0..1 and
     QueueNoExtension named QueueNo 0..* and
     TicketNoExtension named TicketNo 0..* and
