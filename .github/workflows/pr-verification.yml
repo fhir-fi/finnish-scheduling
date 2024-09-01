@@ -12,4 +12,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Run sushi
-      run: docker-compose run runner bash -c "cd /workdir && sushi"
+      run: docker compose run runner bash -c "sushi"
