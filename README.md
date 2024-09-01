@@ -20,13 +20,15 @@ Feel free to join the effort here in GitHub, or through our weekly meetings.
 
 # Office Hours
 
-During the initial development of this guide, we're hosting weekly office hours meetings. Each
-Thursday at 16.00 - 16.55, Finnish time.
+During the initial development of this guide, we're hosting
+* weekly working meetings on Tuesdays, 15.00 - 15.55 Finnish time (EEST) [Teams link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzZhNDg1YjYtMmI0ZC00NWQyLTg5Y2YtMDExMTBkMzJiMGZm%40thread.v2/0?context=%7b%22Tid%22%3a%22ca4ef9a8-6017-4d6f-b345-ed904be37123%22%2c%22Oid%22%3a%225f7c049e-16dc-4481-bfb3-ff79b4f28d4e%22%7d)
+* weekly office hours meetings on Thursdays at 16.00 - 16.55 Finnish time (EEST) [Teams link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzZhNDg1YjYtMmI0ZC00NWQyLTg5Y2YtMDExMTBkMzJiMGZm%40thread.v2/0?context=%7b%22Tid%22%3a%22ca4ef9a8-6017-4d6f-b345-ed904be37123%22%2c%22Oid%22%3a%225f7c049e-16dc-4481-bfb3-ff79b4f28d4e%22%7d).
 
-Add the recurring meeting to your own calendar from the
-[calendar invitation](https://calendar.app.google/cor5GG6yL4S3rAvq7)!
+The working meetings tend to be more planned.
 
-The meeting notes can be found in the
+Office hours meetings are more open for *ad hoc* ideas and discussion.
+
+Meeting notes can be found in the
 [wiki](https://github.com/fhir-fi/finnish-scheduling/wiki/Meeting-memos).
 
 Please feel free to join and discuss topics that are important to you!
@@ -44,7 +46,7 @@ You can also propose to dedicate one of the sessions to discuss topics that are 
 ### On fhir.fi
 
 The results of the latest commit to the `master` branch are published in
-[fhir.fi/finnish-base-profiles/](https://fhir.fi/finnish-smart/).
+[fhir.fi/finnish-scheduling/](https://fhir.fi/finnish-scheduling/).
 
 ### On build.fhir.org
 The results of each commit to this repository are published automatically at the build.fhir.org
