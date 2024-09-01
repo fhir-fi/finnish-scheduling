@@ -26,7 +26,10 @@ Thursday at 16.00 - 16.55, Finnish time.
 Add the recurring meeting to your own calendar from the
 [calendar invitation](https://calendar.app.google/cor5GG6yL4S3rAvq7)!
 
-Please feel free to join and discuss topics that are important to you.
+The meeting notes can be found in the
+[wiki](https://github.com/fhir-fi/finnish-scheduling/wiki/Meeting-memos).
+
+Please feel free to join and discuss topics that are important to you!
 
 You can also propose to dedicate one of the sessions to discuss topics that are important to you.
 
