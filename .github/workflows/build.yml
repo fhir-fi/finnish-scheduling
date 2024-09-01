@@ -1,4 +1,4 @@
-# This workflow will setup IG publisher, run sushi, and publish the results to GitHub Pages
+# This workflow sets up and runs the IG publisher and publishes the results to GitHub Pages
 
 name: Node.js CI
 
@@ -7,7 +7,7 @@ on:
     branches: [ master ]
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+# Set permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
@@ -28,14 +28,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Update the Docker image to the latest publisher
-      uses: docker://hl7fhir/ig-publisher-base:latest
-      with:
-        args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
-    - name: Run the IG publisher
-      uses: docker://hl7fhir/ig-publisher-base:latest
-      with:
-        args: java -jar ./input-cache/publisher.jar publisher -ig .
+    - name: Setup IG publisher
+      run: docker compose run runner bash -c "./_updatePublisher.sh --yes"
+    - name: Generate the IG
+      run: docker compose run runner bash -c "./_genonce.sh"
     - name: Setup Pages
       uses: actions/configure-pages@v2
     - name: Upload artifacts
