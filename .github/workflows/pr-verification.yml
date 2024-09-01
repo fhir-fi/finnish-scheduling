@@ -2,7 +2,7 @@ name: Pull request verification
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
   workflow_dispatch:
 
 jobs:
