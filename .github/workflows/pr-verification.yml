@@ -2,7 +2,7 @@ name: Pull request verification
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
   workflow_dispatch:
 
 jobs:
@@ -11,5 +11,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Run sushi
-      run: docker-compose run runner bash -c "cd /workdir && sushi"
+    - name: Update the Docker image to the latest publisher
+      uses: docker://hl7fhir/ig-publisher-base:latest
+      with:
+        args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
+    - name: Run the IG publisher
+      uses: docker://hl7fhir/ig-publisher-base:latest
+      with:
+        args: java -jar ./input-cache/publisher.jar publisher -ig .
