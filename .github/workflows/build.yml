@@ -26,12 +26,18 @@ jobs:
 
     runs-on: ubuntu-latest
 
+
+
     steps:
     - uses: actions/checkout@v4
-    - name: Setup IG publisher
-      run: docker compose run runner bash -c "./_updatePublisher.sh --yes"
-    - name: Generate the IG
-      run: docker compose run runner bash -c "./_genonce.sh"
+    - name: Update the Docker image to the latest publisher
+      uses: docker://hl7fhir/ig-publisher-base:latest
+      with:
+        args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
+    - name: Run the IG publisher
+      uses: docker://hl7fhir/ig-publisher-base:latest
+      with:
+        args: ./_genonce.sh
     - name: Setup Pages
       uses: actions/configure-pages@v5
     - name: Upload artifacts
