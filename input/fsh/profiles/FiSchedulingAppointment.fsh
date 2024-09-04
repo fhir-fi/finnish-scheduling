@@ -68,7 +68,7 @@ Description: "Base profile for appointment (*ajanvaraus*) in Finnish Scheduling 
 * serviceType.coding.system ^comment = "hl7fi: koodilla ilmaistu tieto palvelusta, johon ajanvaraus kohdistuu Huom. Palvelun nimi ilmaistaan THL - Sosiaali- ja terveysalan palvelunimikkeistön avulla.\r\n\r\nThe URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously."
 * serviceType.coding.system ^requirements = "71 Palvelun nimi"
 * appointmentType ^requirements = "72 Asiointitapa"
-* appointmentType.coding.system = "1.2.246.537.6.884.2015" (exactly)
+* appointmentType.coding.system = "urn:oid:1.2.246.537.6.884.2015" (exactly)
 * appointmentType.coding.system ^short = "hl7fi: asiointitapa"
 * appointmentType.coding.system ^definition = "hl7fi: koodilla ilmaistu tieto ammattihenkilön ja asiakkaan välisen asioinnin tavasta"
 * reasonCode ^slicing.discriminator.type = #exists

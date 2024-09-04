@@ -1,5 +1,5 @@
 Profile: FiSchedulingSlot
-Parent: Slot
+Parent: FiBaseSlot
 Id: fi-scheduling-slot
 Description: "Finnish profile for Slot."
 * serviceCategory ^requirements = "71.1 Palvelun luokka"
