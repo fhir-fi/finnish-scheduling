@@ -24,8 +24,12 @@ and when the service is in progress or completed
 ([#7, Toteutunut](https://koodistopalvelu.kanta.fi/codeserver/pages/code-view-page.xhtml?conceptCodeKey=101027624)).
 
 The Finnish logical model does not have a separate state for when the patient has arrived (FHIR
-status `#arrived`). It does have a code #10 Ilmoittautunut that matches the FHIR code
-`#checked-in`.
+status
+[`#arrived`](https://hl7.org/fhir/R4/codesystem-appointmentstatus.html#appointmentstatus-arrived)).
+It does have a code
+[#10 Ilmoittautunut](https://koodistopalvelu.kanta.fi/codeserver/pages/code-view-page.xhtml?conceptCodeKey=200188374)
+that matches the FHIR code
+[`#checked-in`](https://hl7.org/fhir/R4/codesystem-appointmentstatus.html#appointmentstatus-checked-in).
 
 The Finnish logical model used to have a separate code for an appointment that has been rescheduled
 ([#5, Siirretty](https://koodistopalvelu.kanta.fi/codeserver/pages/code-view-page.xhtml?conceptCodeKey=101027622)),
