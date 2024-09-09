@@ -1,11 +1,6 @@
 Extension: AppointmentMutabilityExtension
-Id: AppointmentMutabilityExtension
-Description: "Extension for FinnishAppointment specifying whether appointment can be changed and when."
-Context: "FinnishSchedulingAppointment"
-* ^meta.lastUpdated = "2021-03-09T07:07:04.484+00:00"
-* ^url = "http://hl7.fi/fhir/StructureDefinition/AppointmentMutabilityExtension"
-* ^status = #draft
-* ^date = "2020-01-02T13:24:30.3493133+00:00"
+Description: "Extension for FiSchedulingAppointment specifying whether appointment can be changed and when."
+Context: Appointment
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -16,4 +11,3 @@ Context: "FinnishSchedulingAppointment"
 * extension[Cancellable].value[x] only boolean
 * extension[Reschedulable].value[x] only boolean
 * extension[NotAfter].value[x] only dateTime
-* url = "http://hl7.fi/fhir/StructureDefinition/AppointmentMutabilityExtension" (exactly)
