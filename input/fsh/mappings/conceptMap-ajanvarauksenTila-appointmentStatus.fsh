@@ -3,7 +3,7 @@ InstanceOf: ConceptMap
 Title: "Ajanvarauksen tila to Appointment status"
 Description: "Mapping between the Finnish logical model [*Ajanvaraus - Ajanvarauksen tila*](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943) (oid `1.2.246.537.6.881`) and FHIR Appoinment status codes."
 Usage: #definition
-* name = "FinnishAppointmentStatusCodeMap"
+* name = "FiAppointmentStatusCodeMap"
 * status = #draft
 * experimental = false
 * sourceUri = "https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943"
