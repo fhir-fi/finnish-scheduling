@@ -1,3 +1,6 @@
+// @Name: FiSchedulingSlot instance example
+// @Description: An example of an instance of a FiSchedulingSlot resource
+
 Instance: example-slot
 InstanceOf: Slot
 Usage: #example
