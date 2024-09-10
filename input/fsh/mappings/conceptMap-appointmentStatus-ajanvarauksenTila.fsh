@@ -15,18 +15,16 @@ Usage: #definition
     * code = #proposed
     * display = "Proposed"
     * target
-      * code = #8
-      * display = "Ehdotettu"
-      * equivalence = #wider
-      * comment = "The Finnish logical model does not separate between proposed and pending codes"
+      * code = #2
+      * display = "Tilattu"
+      * equivalence = #equivalent
   * element[+]
     * code = #pending
     * display = "Pending"
     * target
       * code = #8
       * display = "Ehdotettu"
-      * equivalence = #wider
-      * comment = "The Finnish logical model does not separate between proposed and pending codes"
+      * equivalence = #equivalent
   * element[+]
     * code = #booked
     * display = "Booked"
@@ -38,23 +36,18 @@ Usage: #definition
     * code = #arrived
     * display = "Arrived"
     * target
-      * code = #10
-      * display = "Ilmoittautunut"
-      * equivalence = #wider
-      * comment = "The Finnish logical model does not separate between arrived and checked-in codes"
+      * code = #6
+      * display = "Alkanut"
+      * equivalence = #inexact
+      * comment = "`Alkanut` actually means that the encounter has already started. The code is mapped here to get a closer one-to-one relationship between the code systems."
   * element[+]
     * code = #fulfilled
     * display = "Fulfilled"
     * target
-      * code = #6
-      * display = "Alkanut"
-      * equivalence = #narrower
-      * comment = "Use Alkanut when the encounter of this Appointment is in progress"
-    * target
       * code = #7
       * display = "Toteutunut"
       * equivalence = #narrower
-      * comment = "Use Toteutunut when the service related to the Appointment has begun or is completed"
+      * comment = "Also code `Alkanut` would fit here. However, it is mapped tp `arrived` to get a closer one-to-one relationship between the code systems."
   * element[+]
     * code = #cancelled
     * display = "Cancelled"
@@ -74,25 +67,19 @@ Usage: #definition
     * display = "Entered in error"
     * target
       * equivalence = #unmatched
-      * comment = "There is no code for erroneously entered records in the Finnish logical model"
+      * comment = "There is no code for erroneously entered records in the Finnish logical model."
   * element[+]
     * code = #checked-in
     * display = "Checked In"
     * target
       * code = #10
       * display = "Ilmoittautunut"
-      * equivalence = #equivalent
-      * comment = "The Finnish logical model does not separate between arrived and checked-in codes"
+      * equivalence = #wider
+      * comment = "The Finnish logical model does not separate between `arrived` and `checked-in` codes."
   * element[+]
     * code = #waitlist
     * display = "Waitlisted"
     * target
       * code = #1
       * display = "Suunniteltu"
-      * equivalence = #narrower
-      * comment = "Use Suunniteltu when no service provider has been identified"
-    * target[+]
-      * code = #2
-      * display = "Tilattu"
-      * equivalence = #narrower
-      * comment = "Use Tilattu when a service provider has been identified"
+      * equivalence = #equivalent
