@@ -13,8 +13,8 @@ Usage: #example
 * appointmentType = urn:oid:1.2.246.537.6.884.2015#1 "1.2.246.537.6.884.2015"
 * start = "2024-01-01T12:00:00+02:00"
 * end = "2024-01-01T12:30:00+02:00"
-* slot = Reference(Slot/123456789)
-* created = "2019-12-01"
+* slot = Reference(FiSchedulingSlot/123456789)
+* created = "2023-12-01"
 * comment = "Äidillä ei ole virallista henkilöllisyystodistusta"
 * patientInstruction = "Vanhemmilla tulee olla mukana voimassa olevat henkilöllisyystodistukset sekä äidillä neuvolan äitiyskortti (todistus raskaudesta). Käynnin yhteydessä tehdään oikeusgeneettinen DNA-tutkimus. Ennen näytteen ottamista täyttyy olla syömättä, juomatta ja tupakoimatta vähintään 30 minuuttia"
 * participant[0].actor.identifier.value = "010101-123N"
