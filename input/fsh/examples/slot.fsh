@@ -2,7 +2,7 @@
 // @Description: An example of an instance of a FiSchedulingSlot resource
 
 Instance: example-slot
-InstanceOf: Slot
+InstanceOf: FiSchedulingSlot
 Usage: #example
 * identifier.value = "123456789"
 * serviceCategory = urn:oid:1.2.246.537.6.50.201801#SOTE19 "Perheoikeudelliset palvelut"
