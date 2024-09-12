@@ -7,90 +7,94 @@ Usage: #definition
 * actor[=].type = #person
 * actor[=].name = "Patient"
 * actor[=].description = "The Patient"
-//* actor[+].actorId = "MAP"
-//* actor[=].type = #entity
-//* actor[=].name = "Patient's Tablet"
-//* actor[=].description = "The entity that receives the Administration Requests to show the nurse to perform them"
-//* actor[+].actorId = "OP"
-//* actor[=].type = #entity
-//* actor[=].name = "MAR / Scheduler"
-//* actor[=].description = "The Medication Administration Order Placer"
-//* actor[+].actorId = "MAC"
-//* actor[=].type = #entity
-//* actor[=].name = "MAR / EHR"
-//* actor[=].description = "The entity that receives the Medication Administration reports"
-//* instance[0].resourceId = "iherx001"
-//* instance[=].resourceType = #MedicationRequest
-//* instance[=].name = "Initial Prescription"
-//* instance[=].description = "The initial prescription which describes \"medication X, 3 times per day\" - the exact scheduling is not   in the initial prescription (it is left for the care teams to decide on the schedule)."
-//* instance[+].resourceId = "iherx001.001"
-//* instance[=].resourceType = #MedicationRequest
-//* instance[=].name = "Request for day 1, morning"
-//* instance[=].description = "The administration request for day 1, morning"
-//* instance[+].resourceId = "iherx001.002"
-//* instance[=].resourceType = #MedicationRequest
-//* instance[=].name = "Request for day 1, lunch"
-//* instance[=].description = "The administration request for day 1, lunch"
-//* instance[+].resourceId = "iherx001.003"
-//* instance[=].resourceType = #MedicationRequest
-//* instance[=].name = "Request for day 1, evening"
-//* instance[=].description = "The administration request for day 1, evening"
-//* instance[+].resourceId = "iherx001.004"
-//* instance[=].resourceType = #MedicationRequest
-//* instance[=].name = "Request for day 2, morning"
-//* instance[=].description = "The administration request for day 2, morning"
-//* instance[+].resourceId = "iherx001.005"
-//* instance[=].resourceType = #MedicationRequest
-//* instance[=].name = "Request for day 2, lunch"
-//* instance[=].description = "The administration request for day 2, lunch"
-//* instance[+].resourceId = "iherx001.006"
-//* instance[=].resourceType = #MedicationRequest
-//* instance[=].name = "Request for day 2, evening"
-//* instance[=].description = "The administration request for day 2, evening"
-//* instance[+].resourceId = "iheadm001a"
-//* instance[=].resourceType = #MedicationAdministration
-//* instance[=].name = "Morning meds - taken"
-//* instance[=].description = "Administration report for day 1, morning: Taken"
-//* instance[+].resourceId = "iheadm001b"
-//* instance[=].resourceType = #MedicationAdministration
-//* instance[=].name = "Morning meds - not taken"
-//* instance[=].description = "Administration report for day 1, morning: NOT Taken"
-//* instance[+].resourceId = "iherx001bundle"
-//* instance[=].resourceType = #MedicationRequest
-//* instance[=].name = "Bundle of Medication Requests"
-//* instance[=].description = "All the medication Requests for Day 1"
-//* instance[=].containedInstance[0].resourceId = "iherx001.001"
-//* instance[=].containedInstance[+].resourceId = "iherx001.002"
-//* instance[=].containedInstance[+].resourceId = "iherx001.003"
-//* instance[=].containedInstance[+].resourceId = "iherx001.004"
-//* instance[=].containedInstance[+].resourceId = "iherx001.005"
-//* instance[=].containedInstance[+].resourceId = "iherx001.006"
-//* instance[+].resourceId = "iheadm002"
-//* instance[=].resourceType = #MedicationAdministration
-//* instance[=].name = "Lunch meds - taken"
-//* instance[=].description = "Administration report for day 1, lunch: Taken"
-//* instance[=].version[0].versionId = "iheadm002v1"
-//* instance[=].version[=].description = "Medication just taken"
-//* instance[=].version[+].versionId = "iheadm002v2"
-//* instance[=].version[=].description = "Medication rejected"
-//* instance[+].resourceId = "iherxqry"
-//* instance[=].resourceType = #SearchParameter
-//* instance[=].name = "Search query1"
-//* instance[=].description = "The search administration request for day 1, morning"
-//* process.title = "Mobile Medication Administration"
-//* process.description = "This scenario demonstrates the process of getting the relevant medication instructions for a patient visit and reporting the results of administration. The scenario is as follows: After the prescription is issued, the institution schedules each individual administration event in the Medication Administration Record (MAR). When preparing for a visit, the nurse queries the MAR for the scheduled administrations, obtaining a bundle of records. The nurse then performs the care activities and registers the results in the device. Upon synchronization of the device and the institution, the results of administration are uploaded to the EHR, thus updating the MAR."
-//* process.preConditions = "Medication administration requests are in the EHR / MAR, scheduled for each individual intake."
-//* process.postConditions = "Medication administration Reports are submitted, EHR is updated."
-//* process.step[0].operation.number = "1"
-//* process.step[=].operation.name = "1. Get today's schedule"
-//* process.step[=].operation.initiator = "Nurse"
-//* process.step[=].operation.receiver = "MAP"
+* actor[+].actorId = "MAP"
+* actor[=].type = #entity
+* actor[=].name = "Patient's Tablet"
+* actor[=].description = "The entity that receives the Administration Requests to show the nurse to perform them"
+* actor[+].actorId = "OP"
+* actor[=].type = #entity
+* actor[=].name = "MAR / Scheduler"
+* actor[=].description = "The Medication Administration Order Placer"
+* actor[+].actorId = "MAC"
+* actor[=].type = #entity
+* actor[=].name = "MAR / EHR"
+* actor[=].description = "The entity that receives the Medication Administration reports"
+* instance[0].resourceId = "iherx001"
+* instance[=].resourceType = #MedicationRequest
+* instance[=].name = "Initial Prescription"
+* instance[=].description = "The initial prescription which describes \"medication X, 3 times per day\" - the exact scheduling is not   in the initial prescription (it is left for the care teams to decide on the schedule)."
+* instance[+].resourceId = "iherx001.001"
+* instance[=].resourceType = #MedicationRequest
+* instance[=].name = "Request for day 1, morning"
+* instance[=].description = "The administration request for day 1, morning"
+* instance[+].resourceId = "iherx001.002"
+* instance[=].resourceType = #MedicationRequest
+* instance[=].name = "Request for day 1, lunch"
+* instance[=].description = "The administration request for day 1, lunch"
+* instance[+].resourceId = "iherx001.003"
+* instance[=].resourceType = #MedicationRequest
+* instance[=].name = "Request for day 1, evening"
+* instance[=].description = "The administration request for day 1, evening"
+* instance[+].resourceId = "iherx001.004"
+* instance[=].resourceType = #MedicationRequest
+* instance[=].name = "Request for day 2, morning"
+* instance[=].description = "The administration request for day 2, morning"
+* instance[+].resourceId = "iherx001.005"
+* instance[=].resourceType = #MedicationRequest
+* instance[=].name = "Request for day 2, lunch"
+* instance[=].description = "The administration request for day 2, lunch"
+* instance[+].resourceId = "iherx001.006"
+* instance[=].resourceType = #MedicationRequest
+* instance[=].name = "Request for day 2, evening"
+* instance[=].description = "The administration request for day 2, evening"
+* instance[+].resourceId = "iheadm001a"
+* instance[=].resourceType = #MedicationAdministration
+* instance[=].name = "Morning meds - taken"
+* instance[=].description = "Administration report for day 1, morning: Taken"
+* instance[+].resourceId = "iheadm001b"
+* instance[=].resourceType = #MedicationAdministration
+* instance[=].name = "Morning meds - not taken"
+* instance[=].description = "Administration report for day 1, morning: NOT Taken"
+* instance[+].resourceId = "iherx001bundle"
+* instance[=].resourceType = #MedicationRequest
+* instance[=].name = "Bundle of Medication Requests"
+* instance[=].description = "All the medication Requests for Day 1"
+* instance[=].containedInstance[0].resourceId = "iherx001.001"
+* instance[=].containedInstance[+].resourceId = "iherx001.002"
+* instance[=].containedInstance[+].resourceId = "iherx001.003"
+* instance[=].containedInstance[+].resourceId = "iherx001.004"
+* instance[=].containedInstance[+].resourceId = "iherx001.005"
+* instance[=].containedInstance[+].resourceId = "iherx001.006"
+* instance[+].resourceId = "iheadm002"
+* instance[=].resourceType = #MedicationAdministration
+* instance[=].name = "Lunch meds - taken"
+* instance[=].description = "Administration report for day 1, lunch: Taken"
+* instance[=].version[0].versionId = "iheadm002v1"
+* instance[=].version[=].description = "Medication just taken"
+* instance[=].version[+].versionId = "iheadm002v2"
+* instance[=].version[=].description = "Medication rejected"
+* instance[+].resourceId = "iherxqry"
+* instance[=].resourceType = #SearchParameter
+* instance[=].name = "Search query1"
+* instance[=].description = "The search administration request for day 1, morning"
+* process.title = "Mobile Medication Administration"
+* process.description = "This scenario demonstrates the process of getting the relevant medication instructions for a patient visit and reporting the results of administration. The scenario is as follows: After the prescription is issued, the institution schedules each individual administration event in the Medication Administration Record (MAR). When preparing for a visit, the nurse queries the MAR for the scheduled administrations, obtaining a bundle of records. The nurse then performs the care activities and registers the results in the device. Upon synchronization of the device and the institution, the results of administration are uploaded to the EHR, thus updating the MAR."
+* process.preConditions = "Medication administration requests are in the EHR / MAR, scheduled for each individual intake."
+* process.postConditions = "Medication administration Reports are submitted, EHR is updated."
+* process.step[0].operation.number = "1"
+* process.step[=].operation.name = "1. Get today's schedule"
+* process.step[=].operation.initiator = "Patient"
+* process.step[=].operation.initiatorActive = true
+* process.step[=].operation.receiver = "MAP"
+* process.step[=].operation.receiverActive = true
 //* process.step[+].process.title = "P1. Query Administration Requests"
 //* process.step[=].process.description = "Query for medication administration orders,\\n- For today's shifts\\n- For today's patients"
 //* process.step[=].process.step.operation.number = "2"
 //* process.step[=].process.step.operation.name = "2.Query for medication administration orders,\\n- For today's shifts\\n- For today's patients"
-//* process.step[=].process.step.operation.initiator = "MAP"
-//* process.step[=].process.step.operation.receiver = "OP"
+//* process.step[=].process.step.operation.initiator = "Patient"
+//* process.step[=].process.step.operation.initiatorActive = true
+//* process.step[=].process.step.operation.receiver = "Patient"
+//* process.step[=].process.step.operation.receiverActive = true
 //* process.step[=].process.step.operation.request.resourceId = "iherxqry"
 //* process.step[=].process.step.operation.response.resourceId = "iherx001bundle"
 //* process.step[+].pause = true
