@@ -1,7 +1,7 @@
 The primary way to adapt the FHIR specification to specific requirements of a jurisdiction is
 through [extensions](http://hl7.org/fhir/R4/extensibility.html).
 
-### Extensions for Finnish Base Profiles
+### Extensions published by HL7 Finland
 
 This list includes the extensions for scheduling related profiles defined by HL7 Finland.
 
@@ -9,10 +9,24 @@ This list includes the extensions for scheduling related profiles defined by HL7
 {% include list-extensions.xhtml %}
 </ul>
 
-### Extensions in other Finnish Implementation Guides
+{:.stu-note}
+All of these extensions have been defined in earlier implementation guides. The canonical URLs of
+the extensions have been modified slightly, mainly to be in the `https` space, rather than `http`.
+Implementer feedback is welcome at this stage to help evaluate whether this is a welcome change
+and regarding implementation efforts.
 
-Please also note the
-[extensions listed in the Finnish Base Profiles specification](https://hl7.fi/fhir/finnish-base-profiles/extensions.html).
+The earlier versions of these extensions can be cound at
+[FinnishAppoinment](https://simplifier.net/finnishappointment/~resources?category=Extension&sortBy=DisplayName)
+and
+[FinnishScheduling R4](https://simplifier.net/finnishschedulingr4/~resources?category=Extension&sortBy=DisplayName)
+implementation guides.
+
+Some of the extensions have been moved to the
+[Finnish Base Profiles specification](https://hl7.fi/fhir/finnish-base-profiles/extensions.html).
+These include extensions related to service event (*palvelutapahtuma*) and to visibility of
+information.
+
+### Extensions in other Finnish Implementation Guides
 
 In addition to the extensions published by HL7 Finland, there are also other extensions used in
 Finland. Most notably the ones for the national Kanta system, in several implementation guides:
