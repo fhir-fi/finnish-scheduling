@@ -95,14 +95,14 @@
   ],
   "extension": [
     {
-      "url": "http://hl7.fi/fhir/StructureDefinition/NotificationInfoExtension",
+      "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/notification-info",
       "valueContactPoint": {
         "system": "sms",
         "value": "+3581234567"
       }
     },
     {
-      "url": "http://hl7.fi/fhir/StructureDefinition/AppointmentMutabilityExtension",
+      "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/mutable",
       "extension": [
         {
           "url": "Cancellable",
