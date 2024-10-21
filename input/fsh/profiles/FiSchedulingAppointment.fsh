@@ -15,7 +15,6 @@ Description: "Base profile for appointment (*ajanvaraus*) in Finnish Scheduling 
     ResourceCalendarIdExtension named ResourceCalendar 0..* and
     ReferralIdExtension named ReferralId 0..* and
     RequestedServiceExtension named RequestedService 0..1 and
-    MiscAppointmentDataExtension named MiscAppointmentData 0..1 and
     PractitionerGenderExtension named PractitionerGender 0..1 and
     NotificationMediumExtension named NotificationMedium 0..* and
     CareGuaranteeExtension named CareGuarantee 0..1 and
