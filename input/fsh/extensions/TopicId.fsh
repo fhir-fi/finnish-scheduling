@@ -1,4 +1,4 @@
-Extension: TopicIdExtension
+Extension: TopicId
 Id: topic-id
 Title: "Topic Id"
 Description: "Social care topic (*asia*) id."

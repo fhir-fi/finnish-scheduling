@@ -1,4 +1,4 @@
-Extension: TicketNoExtension
+Extension: TicketNo
 Id: ticket-number
 Title: "Ticket Number"
 Description: "Ticket number to be included in the appointment."

@@ -1,4 +1,4 @@
-Extension: QueueNoExtension
+Extension: QueueNo
 Id: queue-number
 Title: "Queue Number"
 Description: "An extension for queue number (in string format)."

@@ -1,4 +1,4 @@
-Extension: PractitionerGenderExtension
+Extension: PractitionerGender
 Id: prectitioner-gender
 Title: "Practitioner Gender"
 Description: "Extension for practitioner gender for appointment."

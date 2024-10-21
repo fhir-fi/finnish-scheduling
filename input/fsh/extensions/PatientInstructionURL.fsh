@@ -1,4 +1,4 @@
-Extension: PatientInstructionURLExtension
+Extension: PatientInstructionURL
 Id: patient-instruction-url
 Title: "Patient Instruction URL"
 Description: "URL for patient instruction."

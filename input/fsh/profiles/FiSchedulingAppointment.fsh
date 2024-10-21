@@ -6,21 +6,24 @@ Description: "Base profile for appointment (*ajanvaraus*) in Finnish Scheduling 
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
-    TopicIdExtension named TopicId 0..1 and
-    QueueNoExtension named QueueNo 0..* and
-    TicketNoExtension named TicketNo 0..* and
-    CustomerJourneyExtension named CustomerJourney 0..* and
+    AdditionalInformationURL named AdditionalInformationURL 0..* and
+    AppointmentMutability named AppointmentMutability 0..1 and
+    CareGuaranteeDetails named CareGuaranteeDetails 0..1 and
+    CareplanIdentifier named CareplanIdentifier 0..* and
+    CustomerJourney named CustomerJourney 0..* and
+    NotificationInfo named NotificationInfo 0..* and
+    NotificationMedium named NotificationMedium 0..* and
     ParentAppointment named ParentAppointment 0..1 and
-    SelfServiceExtension named SelfServiceExtension 0..1 and
-    ResourceCalendarIdExtension named ResourceCalendar 0..* and
-    ReferralIdExtension named ReferralId 0..* and
-    RequestedServiceExtension named RequestedService 0..1 and
-    PractitionerGenderExtension named PractitionerGender 0..1 and
-    NotificationMediumExtension named NotificationMedium 0..* and
-    CareGuaranteeExtension named CareGuarantee 0..1 and
-    AdditionalInformationURLExtension named AdditionalInformationURL 0..* and
-    CareplanIdentifierExtension named CarePlan 0..* and
-    AppointmentMutabilityExtension named AppointmentMutability 0..1
+    PatientInstructionURL named PatientInstructionURL 0..* and
+    PractitionerGender named PractitionerGender 0..1 and
+    QueueNo named QueueNo 0..* and
+    ReferralId named ReferralId 0..* and
+    RequestedService named RequestedService 0..1 and
+    ResourceCalendarId named ResourceCalendarId 0..* and
+    SelfServiceInfo named SelfServiceInfo 0..1 and
+    ServiceAdditionalInformation named ServiceAdditionalInformation 0..* and
+    TicketNo named TicketNo 0..* and
+    TopicId named TopicId 0..1
 * identifier 1..*
 * identifier ^definition = "hl7fi: 18 Ajanvarauksen tunniste - mandatory, not recurring\r\n\r\nThis records identifiers associated with this appointment concern that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation)."
 * identifier.value 1..

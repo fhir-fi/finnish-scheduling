@@ -1,4 +1,4 @@
-Extension: RequestedServiceExtension
+Extension: RequestedService
 Id: requested-service-info
 Title: "Requested Service Info"
 Description: "Extension for providing additional information for appointment service: reserved product/service."

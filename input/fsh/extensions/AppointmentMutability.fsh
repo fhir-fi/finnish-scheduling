@@ -1,4 +1,4 @@
-Extension: AppointmentMutabilityExtension
+Extension: AppointmentMutability
 Id: mutable
 Title: "Appointment Mutability"
 Description: "Extension specifying whether appointment can be changed and when."

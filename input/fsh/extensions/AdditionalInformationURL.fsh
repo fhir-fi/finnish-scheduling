@@ -1,4 +1,4 @@
-Extension: AdditionalInformationURLExtension
+Extension: AdditionalInformationURL
 Id: additional-information-url
 Title: "Additional Information URL"
 Description: "URL for additional information regarding appointment"

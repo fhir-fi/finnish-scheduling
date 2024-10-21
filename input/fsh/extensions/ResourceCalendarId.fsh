@@ -1,4 +1,4 @@
-Extension: ResourceCalendarIdExtension
+Extension: ResourceCalendarId
 Id: resource-calendar
 Title: "Resource Calendar"
 Description: "Extension for resource calendar id and resource name."

@@ -1,4 +1,4 @@
-Extension: CustomerJourneyExtension
+Extension: CustomerJourney
 Id: customer-journey
 Title: "Customer Journey"
 Description: "Identifier for the customer journey (*hoitopolku*)"
