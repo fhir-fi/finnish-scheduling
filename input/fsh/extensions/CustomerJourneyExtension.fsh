@@ -1,6 +1,6 @@
 Extension: CustomerJourneyExtension
 Description: "Identifier for the customer journey (*hoitopolku*)"
-Context: "StructureDefinition"
+Context: Appointment
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
