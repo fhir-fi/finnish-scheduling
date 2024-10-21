@@ -1,5 +1,6 @@
-Extension: ResourceCalendarIdExtension
-Id: ResourceCalendarIdExtension
+Extension: ResourceCalendarId
+Id: resource-calendar
+Title: "Resource Calendar"
 Description: "Extension for resource calendar id and resource name."
 Context: Appointment
 * extension ^slicing.discriminator.type = #value

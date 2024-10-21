@@ -1,5 +1,32 @@
-Version 1.0.0 is the first official release of this implementation guide. See the history of
-published versions in the
+### History
+This implementation guide is based on two previously published guides.
+
+* [FinnishScheduling R4](https://simplifier.net/finnishschedulingr4/), published in 2020, presented
+  the Finnish logical model for appointments in FHIR.
+* [FinnishAppointment](https://simplifier.net/finnishappointment), published in 2021, concentrated
+  more on actual interactions performed by systems when booking and managing appointments.
+
+Both of those guides were published in Simplifier. When starting to work on the
+[Finnish FHIR Base Profiles](https://hl7.fi/fhir/finnish-base-profiles/) in 2022, HL7 Finland moved
+to a different workflow for implementation guides, utilizing [GitHub](https://github.com/fhir-fi),
+[FHIR Shorthand](https://www.hl7.org/fhir/uv/shorthand/), and the
+[build.fhir.org](https://build.fhir.org/ig/) infrastructure.
+
+After the initial work on [Finnish FHIR Base Profiles](https://hl7.fi/fhir/finnish-base-profiles/)
+and [Finnish Implementation Guide for SMART App Launch](https://hl7.fi/fhir/finnish-smart/) the
+community decided to update the scheduling related implementation guides. The logical model for
+appointments had evolved, and new insights on implementability had beed gathered from
+implementation efforts. New requirements were also presented.
+
+This implementation guide is the result of that activity. It was considered best to consolidate the
+information in a single implementation guide.
+
+The old implementation guides in Simplifier may still be a useful reference. 
+
+### This Implementation Guide
+
+Version 1.0.0 is the first official release of this consolidated implementation guide. See the
+history of published versions in the
 [publication directory](https://hl7.fi/fhir/finnish-scheduling/history.html).
 
 You can track the changes between released snapshot versions through the
