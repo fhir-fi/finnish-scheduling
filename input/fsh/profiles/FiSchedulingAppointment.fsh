@@ -6,11 +6,9 @@ Description: "Base profile for appointment (*ajanvaraus*) in Finnish Scheduling 
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
-    ServiceEvent named ServiceEvent 0..1 and
     TopicIdExtension named TopicId 0..1 and
     QueueNoExtension named QueueNo 0..* and
     TicketNoExtension named TicketNo 0..* and
-    VisibleToCustodianExtension named VisibleToCustodian 0..1 and
     CustomerJourneyExtension named CustomerJourney 0..* and
     ParentAppointment named ParentAppointment 0..1 and
     SelfServiceExtension named SelfServiceExtension 0..1 and
@@ -24,25 +22,6 @@ Description: "Base profile for appointment (*ajanvaraus*) in Finnish Scheduling 
     AdditionalInformationURLExtension named AdditionalInformationURL 0..* and
     CareplanIdentifierExtension named CarePlan 0..* and
     AppointmentMutabilityExtension named AppointmentMutability 0..1
-* extension[ServiceEvent] ^requirements = "22 Palvelutapahtuman tunniste"
-* extension[TopicId] ^requirements = "23 Asian tunniste"
-* extension[QueueNo] ^requirements = "82 Jonotusnumero"
-* extension[TicketNo] ^requirements = "101 Tikettinumero"
-* extension[VisibleToCustodian] ^requirements = "59 Ajanvarauksen tietojen näyttäminen huoltajalle"
-* extension[CustomerJourney] ^requirements = "20 Asiakaspolun tunniste\r\n20.1 Asiakaspolun nimi"
-* extension[ParentAppointment] ^requirements = "12 Pääajanvaraus"
-* extension[SelfServiceExtension] ^requirements = "84 AsiointiURL\r\n84.1 Järjestelmä tukee alaikäisen puolesta asiointia\r\n84.2 Järjestelmä tukee puolesta-asiointia valtakirjalla täysi-ikäisen puolesta\r\n84.3 Järjestelmä tukee rekisteripohjaista puolesta-asiointia täysi-ikäisen puolesta"
-* extension[ResourceCalendar] ^requirements = "74 Resurssin kalenteritunniste\r\n75 Resurssin nimi"
-// * extension[ResourceCalendar].extension contains ResourceCalendarName 0..1
-* extension[ReferralId] ^requirements = "24 Ajanvaraukseen liittyvän lähetteen tai pyynnön tunniste"
-* extension[RequestedService] ^requirements = "73 Varaustuote\r\n73.1 Varaustuotteen nimi"
-* extension[MiscAppointmentData] ^requirements = "91 Muu sisältö"
-* extension[PractitionerGender] ^requirements = "93 Palvelun toteuttajan sukupuoli"
-* extension[NotificationMedium] ^requirements = "94 Muistutuksen tapa"
-* extension[CareGuarantee] ^requirements = "97 Hoitotakuu"
-* extension[AdditionalInformationURL] ^requirements = "98 Lisätietojen osoite"
-* extension[CarePlan] ^requirements = "17 Ajanvaraukseen liittyvän suunnitelman tunniste"
-* extension[AppointmentMutability] ^requirements = "95 Peruttavissa\r\n96 Siirrettävissä\r\n96.1 Peruutuksen tai siirron aikaraja"
 * identifier 1..*
 * identifier ^definition = "hl7fi: 18 Ajanvarauksen tunniste - mandatory, not recurring\r\n\r\nThis records identifiers associated with this appointment concern that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation)."
 * identifier.value 1..
