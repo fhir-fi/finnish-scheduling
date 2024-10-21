@@ -1,6 +1,6 @@
 Extension: SelfServiceExtension
 Id: SelfServiceExtension
-Description: "Extension for Finnish Scheduling appointment, that notifies whether there is a self service for managing appointment (provides URL and information whether management can be made by proxy)."
+Description: "Extension that notifies whether there is a self service for managing appointment (provides URL and information on whether management can be made by proxy)."
 Context: Appointment
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
