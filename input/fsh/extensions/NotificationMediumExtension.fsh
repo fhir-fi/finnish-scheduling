@@ -1,4 +1,6 @@
 Extension: NotificationMediumExtension
+Id: notification-medium
+Title: "Notification Medium"
 Description: "Information on notification medium, based on *THL - Viestintäkanava* codesystem."
 Context: Appointment
 * value[x] only Coding

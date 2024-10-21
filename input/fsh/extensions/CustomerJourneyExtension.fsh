@@ -1,4 +1,6 @@
 Extension: CustomerJourneyExtension
+Id: customer-journey
+Title: "Customer Journey"
 Description: "Identifier for the customer journey (*hoitopolku*)"
 Context: Appointment
 * extension ^slicing.discriminator.type = #value

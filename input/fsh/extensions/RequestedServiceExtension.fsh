@@ -1,5 +1,6 @@
 Extension: RequestedServiceExtension
-Id: RequestedServiceExtension
+Id: requested-service-info
+Title: "Requested Service Info"
 Description: "Extension for providing additional information for appointment service: reserved product/service."
 Context: Appointment
 * extension ^slicing.discriminator.type = #value

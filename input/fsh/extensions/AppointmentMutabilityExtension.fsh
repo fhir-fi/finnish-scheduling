@@ -1,5 +1,7 @@
 Extension: AppointmentMutabilityExtension
-Description: "Extension for FiSchedulingAppointment specifying whether appointment can be changed and when."
+Id: mutable
+Title: "Appointment Mutability"
+Description: "Extension specifying whether appointment can be changed and when."
 Context: Appointment
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
