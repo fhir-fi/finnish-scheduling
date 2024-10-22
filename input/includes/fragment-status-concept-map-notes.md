@@ -10,7 +10,7 @@ identified
 and when the service provider has been selected
 ([#2, Tilattu](https://koodistopalvelu.kanta.fi/codeserver/pages/code-view-page.xhtml?conceptCodeKey=101027619)).
 
-The FHIR specification uses the Appoinment resource to track information on scheduling and for
+The FHIR specification uses the Appointment resource to track information on scheduling and for
 administrative purposes, and the Encounter resource to track any clinically relevant information
 (see [Appointment Statuses and Encounters](https://hl7.org/fhir/R4B/appointment.html#statuses)). In
 FHIR, when an encounter starts, its state is tracked with the
