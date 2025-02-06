@@ -18,17 +18,11 @@ The aim is to get first public STU1 version of the guide published on Q4/2024.
 
 Feel free to join the effort here in GitHub, or through our weekly meetings.
 
-# Office Hours
+# Project Meetings
 
-During the initial development of this guide, we're hosting
-* weekly working meetings on Tuesdays, 15.00 - 15.55 Finnish time (EEST) [Teams link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzZhNDg1YjYtMmI0ZC00NWQyLTg5Y2YtMDExMTBkMzJiMGZm%40thread.v2/0?context=%7b%22Tid%22%3a%22ca4ef9a8-6017-4d6f-b345-ed904be37123%22%2c%22Oid%22%3a%225f7c049e-16dc-4481-bfb3-ff79b4f28d4e%22%7d)
-* weekly office hours meetings on Thursdays at 16.00 - 16.55 Finnish time (EEST) [Teams link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzZhNDg1YjYtMmI0ZC00NWQyLTg5Y2YtMDExMTBkMzJiMGZm%40thread.v2/0?context=%7b%22Tid%22%3a%22ca4ef9a8-6017-4d6f-b345-ed904be37123%22%2c%22Oid%22%3a%225f7c049e-16dc-4481-bfb3-ff79b4f28d4e%22%7d).
+During the initial development of this guide, we're hosting weekly working meetings on Tuesdays, 15.00 - 15.55 Finnish time (EEST) [Teams link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzZhNDg1YjYtMmI0ZC00NWQyLTg5Y2YtMDExMTBkMzJiMGZm%40thread.v2/0?context=%7b%22Tid%22%3a%22ca4ef9a8-6017-4d6f-b345-ed904be37123%22%2c%22Oid%22%3a%225f7c049e-16dc-4481-bfb3-ff79b4f28d4e%22%7d).
 
-The working meetings tend to be more planned.
-
-Office hours meetings are more open for *ad hoc* ideas and discussion.
-
-Meeting notes can be found in the
+Agendas and meeting notes can be found in the
 [wiki](https://github.com/fhir-fi/finnish-scheduling/wiki/Meeting-memos).
 
 Please feel free to join and discuss topics that are important to you!

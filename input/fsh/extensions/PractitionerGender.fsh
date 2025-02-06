@@ -1,5 +1,6 @@
-Extension: PractitionerGenderExtension
-Id: PractitionerGenderExtension
+Extension: PractitionerGender
+Id: practitioner-gender
+Title: "Practitioner Gender"
 Description: "Extension for practitioner gender for appointment."
 Context: Appointment
 * value[x] only Coding

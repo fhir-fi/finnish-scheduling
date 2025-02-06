@@ -1,6 +1,7 @@
-Extension: TicketNoExtension
-Id: TicketNoExtension
+Extension: TicketNo
+Id: ticket-number
+Title: "Ticket Number"
 Description: "Ticket number to be included in the appointment."
-Context: "StructureDefinition"
+Context: Appointment
 * value[x] 1..
 * value[x] only string
