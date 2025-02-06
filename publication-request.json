@@ -1,11 +1,11 @@
 {
   "package-id" : "hl7.fhir.fi.scheduling",
-  "version" : "0.4.0",
-  "path" : "https://hl7.fi/fhir/finnish-scheduling/0.4.0",
+  "version" : "2.0.0-rc1",
+  "path" : "https://hl7.fi/fhir/finnish-scheduling/2.0.0-rc1",
   "mode" : "milestone",
-  "status" : "draft",
-  "sequence" : "STU 1",
-  "desc" : "Snapshot 0.4.0",
-  "descmd" : "Include descriptive text and modified extensions.",
+  "status" : "ballot",
+  "sequence" : "STU 2",
+  "desc" : "First release candidate for 2.0.0",
+  "descmd" : "First release candidate for 2.0.0.",
   "first" : "false"
 }
