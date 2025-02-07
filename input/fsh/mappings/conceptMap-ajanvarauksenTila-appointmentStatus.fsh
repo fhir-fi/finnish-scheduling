@@ -18,6 +18,7 @@ Usage: #definition
       * code = #waitlist
       * display = "Waitlisted"
       * equivalence = #equivalent
+      * comment = "Patient and need have been identified, the service provider and time have not."
   * element[+]
     * code = #2
     * display = "Tilattu"
@@ -25,13 +26,14 @@ Usage: #definition
       * code = #proposed
       * display = "Proposed"
       * equivalence = #equivalent
+      * comment = "Differs from *Suunniteltu* in that in *Tilattu* the service provider has been identified."
   * element[+]
     * code = #8
     * display = "Ehdotettu"
     * target
       * code = #pending
       * display = "Pending"
-      * equivalence = #equivalent
+      * equivalence = #equal
   * element[+]
     * code = #3
     * display = "Varattu"
@@ -50,7 +52,8 @@ Usage: #definition
     * code = #5
     * display = "Siirretty"
     * target
-      * equivalence = #unmatched
+      * code = #cancelled
+      * equivalence = #wider
       * comment = "There is no status code in FHIR for rescheduled appointments. Note that this code is deprecated."
   * element[+]
     * code = #10
@@ -63,14 +66,18 @@ Usage: #definition
     * code = #6
     * display = "Alkanut"
     * target
-      * equivalence = #unmatched
-      * comment = "There is no status code in FHIR for an appointment having begun or being in process. In FHIR this information is tracked with the status of the Encounter resource."
+      * code = #fulfilled
+      * display = "Fulfilled"
+      * equivalence = #wider
+      * comment = "*Alkanut* means that the encounter has begun and is ongoing. Most FHIR systems track this with the Encounter resource. There is no such state in Appointment."
   * element[+]
     * code = #7
     * display = "Toteutunut"
     * target
-      * equivalence = #unmatched
-      * comment = "There is no status code in FHIR for an appointment being in progress or completed. In FHIR this information is tracked with the status of the Encounter resource."
+      * code = #fulfilled
+      * display = "Fulfilled"
+      * equivalence = #wider
+      * comment = "*Toteutunut* means that the service the appointment is for has started or is complete. Most FHIR systems track this with the Encounter resource. There is no such state in Appointment."
   * element[+]
     * code = #9
     * display = "Saapumatta"

@@ -36,16 +36,28 @@ Usage: #definition
     * code = #arrived
     * display = "Arrived"
     * target
-      * equivalence = #unmatched
-      * comment = "The Finnish logical model does not have a direct match for the arrived status. There is the status `Ilmoittautunut` for when the patient has checked in, and `Alkanut` for when the encounter has stated."
+      * code = #3
+      * display = "Varattu"
+      * equivalence = #wider
+      * comment = "The Finnish logical model does not have a direct match for the arrived status."
+    * target[+]
+      * code = #6
+      * display = "Alkanut"
+      * equivalence = #inexact
+      * comment = "There is the status `Alkanut` for when the encounter has stated."
   * element[+]
     * code = #fulfilled
     * display = "Fulfilled"
     * target
       * code = #6
       * display = "Alkanut"
-      * equivalence = #inexact
-      * comment = "`Alkanut` actually means that the encounter has already started. The code is mapped here to get a closer one-to-one relationship between the code systems."
+      * equivalence = #narrower
+      * comment = "`Alkanut` actually means that the encounter has already started."
+    * target[+]
+      * code = #7
+      * display = "Toteutunut"
+      * equivalence = #narrower
+      * comment = "`Toteutunut` means that the encounter (or other provision of service) has begun or is complete."
   * element[+]
     * code = #cancelled
     * display = "Cancelled"
@@ -72,8 +84,7 @@ Usage: #definition
     * target
       * code = #10
       * display = "Ilmoittautunut"
-      * equivalence = #inexact
-      * comment = "The Finnish logical model does not separate between `arrived` and `checked-in` codes."
+      * equivalence = #equal
   * element[+]
     * code = #waitlist
     * display = "Waitlisted"

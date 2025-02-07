@@ -32,9 +32,6 @@ On the other hand, the Finnish logical model separates between when an encounter
 and when the service is in progress or completed
 ([#7, Toteutunut](https://koodistopalvelu.kanta.fi/codeserver/pages/code-view-page.xhtml?conceptCodeKey=101027624)).
 
-The mapping provided here does not fully respect FHIR semantics. 
-`Alkanut` actually means that the encounter has already started. The code is mapped here to get a closer one-to-one relationship between the code systems.
-
 The Finnish logical model used to have a separate code for an appointment that has been rescheduled
 ([#5, Siirretty](https://koodistopalvelu.kanta.fi/codeserver/pages/code-view-page.xhtml?conceptCodeKey=101027622)),
 but that code is now deprecated.
