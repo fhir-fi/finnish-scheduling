@@ -23,11 +23,12 @@ There are essentially two modes for scheduling in healthcare. See the section
 [workflow types](https://hl7.org/fhir/r5/appointment.html#workflow-types) of the FHIR Appointment
 resource.
 
-In Finland, all known FHIR APIs for scheduling use the first one, the "Outlook Style".
-
 [Argonaut](https://fhir.org/guides/argonaut/scheduling/) and
 [IHE](https://github.com/IHE/ITI.Scheduling/) seem to head more into the "Hospital Scheduling" mode
 with operations rather than direct REST calls.
+
+In Finland also the first one, the "Outlook Style", is used.
+
 
 ### Notable Implementations in Finland
 
@@ -63,6 +64,15 @@ also uses FHIR scheduling to communicate with electronic health record systems a
 party implementations.
 
 ### Other Guides and Links
+
+Finnish national specifications for scheduling are in
+[Sote-ajanvaraus - yleiskuvaus ja terveydenhuollon ajanvarausratkaisujen kansalliset vaatimukset](https://yhteistyotilat.fi/wiki08/display/THLAJANJULK).
+
+Kanta specifications are in
+[Kanta Potilastiedon arkiston FHIR R4](https://simplifier.net/kanta-potilastiedon-arkiston-fhir-r4).
+
+See also the links to concept definitions on the
+[terminology](terminology.html#other-terminologies) page.
 
 Other scheduling related links and FHIR implementation guides include
 * [FHIR Appointment Scheduling Workflows](https://www.hl7.org/fhir/appointment.html#workflow-types)
