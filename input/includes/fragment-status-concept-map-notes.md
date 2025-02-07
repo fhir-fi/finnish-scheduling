@@ -10,18 +10,14 @@ identified
 and when the service provider has been selected
 ([#2, Tilattu](https://koodistopalvelu.kanta.fi/codeserver/pages/code-view-page.xhtml?conceptCodeKey=101027619)).
 
-The FHIR specification uses the Appointment resource to track information on scheduling and for
-administrative purposes, and the Encounter resource to track any clinically relevant information
-(see [Appointment Statuses and Encounters](https://hl7.org/fhir/R4B/appointment.html#statuses)). In
+The FHIR specification uses the Appoinment resource to track information on scheduling and for
+administrative purposes, and in general for prepapring for the encounter. In FHIR, the Encounter
+resource is used to track the encounter, and any clinically relevant information (see
+[Appointment Statuses and Encounters](https://hl7.org/fhir/R4B/appointment.html#statuses)). In
 FHIR, when an encounter starts, its state is tracked with the
 [Encounter](https://hl7.org/fhir/R4B/encounter.html) resource, and no longer with the
-[Appointment](https://hl7.org/fhir/R4B/appointment.html).
-
-The Finnish logical model does not make such a distinction. The same value set records states for
-when the encounter has started
-([#6, Alkanut](https://koodistopalvelu.kanta.fi/codeserver/pages/code-view-page.xhtml?conceptCodeKey=101027623))
-and when the service is in progress or completed
-([#7, Toteutunut](https://koodistopalvelu.kanta.fi/codeserver/pages/code-view-page.xhtml?conceptCodeKey=101027624)).
+[Appointment](https://hl7.org/fhir/R4B/appointment.html). The Finnish logical model does not make
+such a distinction between the appointment and the encounter.
 
 The Finnish logical model does not have a separate state for when the patient has arrived (FHIR
 status
@@ -31,27 +27,16 @@ It does have a code
 that matches the FHIR code
 [checked-in](https://hl7.org/fhir/R4/codesystem-appointmentstatus.html#appointmentstatus-checked-in).
 
+On the other hand, the Finnish logical model separates between when an encounter has started
+([#6, Alkanut](https://koodistopalvelu.kanta.fi/codeserver/pages/code-view-page.xhtml?conceptCodeKey=101027623))
+and when the service is in progress or completed
+([#7, Toteutunut](https://koodistopalvelu.kanta.fi/codeserver/pages/code-view-page.xhtml?conceptCodeKey=101027624)).
+
+The mapping provided here does not fully respect FHIR semantics. 
+`Alkanut` actually means that the encounter has already started. The code is mapped here to get a closer one-to-one relationship between the code systems.
+
 The Finnish logical model used to have a separate code for an appointment that has been rescheduled
 ([#5, Siirretty](https://koodistopalvelu.kanta.fi/codeserver/pages/code-view-page.xhtml?conceptCodeKey=101027622)),
 but that code is now deprecated.
 
 The Finnish logical model does not have any code for appointments that have been entered in error.
-
-<style>
-  table.grid {
-    table-layout: fixed;
-    width: 100%;
-  }
-  table.grid td {
-    width: 20%;
-  }
-  table.grid td:nth-child(2) {
-    width: 10%;
-  }
-  table.grid td:nth-child(4) {
-    width: 50%;
-  }
-  table.grid tr:first-child td:last-child {
-    display: none;
-  }
-</style>

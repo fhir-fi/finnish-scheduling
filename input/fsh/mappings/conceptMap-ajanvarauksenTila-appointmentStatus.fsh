@@ -63,17 +63,13 @@ Usage: #definition
     * code = #6
     * display = "Alkanut"
     * target
-      * code = #arrived
-      * display = "Arrived"
-      * equivalence = #inexact
+      * equivalence = #unmatched
       * comment = "There is no status code in FHIR for an appointment having begun or being in process. In FHIR this information is tracked with the status of the Encounter resource."
   * element[+]
     * code = #7
     * display = "Toteutunut"
     * target
-      * code = #fulfilled
-      * display = "Fulfilled"
-      * equivalence = #inexact
+      * equivalence = #unmatched
       * comment = "There is no status code in FHIR for an appointment being in progress or completed. In FHIR this information is tracked with the status of the Encounter resource."
   * element[+]
     * code = #9
