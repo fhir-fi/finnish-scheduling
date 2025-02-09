@@ -1,0 +1,1 @@
+Schedule of the practitioner has been confirmed, time has been proposed to the patient.

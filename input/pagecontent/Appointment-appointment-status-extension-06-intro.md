@@ -1,0 +1,1 @@
+The patient has accepted the new time for the appointment.
