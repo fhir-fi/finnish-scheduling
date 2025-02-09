@@ -1,0 +1,1 @@
+This is created when the patient searches for a new time for the appointment.

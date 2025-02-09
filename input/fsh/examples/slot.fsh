@@ -1,6 +1,8 @@
-Instance: example-slot
+Instance: ExampleSlot
 InstanceOf: Slot
+Description: "An example Slot"
 Usage: #example
+* id = "123456789"
 * identifier.value = "123456789"
 * serviceCategory = urn:oid:1.2.246.537.6.50.201801#SOTE19 "Perheoikeudelliset palvelut"
 * serviceType = urn:oid:1.2.246.537.6.49.201501#NC "Isyyden selvittämispalvelu"

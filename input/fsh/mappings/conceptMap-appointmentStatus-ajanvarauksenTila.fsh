@@ -15,18 +15,16 @@ Usage: #definition
     * code = #proposed
     * display = "Proposed"
     * target
-      * code = #8
-      * display = "Ehdotettu"
-      * equivalence = #wider
-      * comment = "The Finnish logical model does not separate between proposed and pending codes"
+      * code = #2
+      * display = "Tilattu"
+      * equivalence = #equivalent
   * element[+]
     * code = #pending
     * display = "Pending"
     * target
       * code = #8
       * display = "Ehdotettu"
-      * equivalence = #wider
-      * comment = "The Finnish logical model does not separate between proposed and pending codes"
+      * equivalence = #equivalent
   * element[+]
     * code = #booked
     * display = "Booked"
@@ -38,10 +36,15 @@ Usage: #definition
     * code = #arrived
     * display = "Arrived"
     * target
-      * code = #10
-      * display = "Ilmoittautunut"
+      * code = #3
+      * display = "Varattu"
       * equivalence = #wider
-      * comment = "The Finnish logical model does not separate between arrived and checked-in codes"
+      * comment = "The Finnish logical model does not have a direct match for the arrived status."
+    * target[+]
+      * code = #6
+      * display = "Alkanut"
+      * equivalence = #inexact
+      * comment = "There is the status Alkanut for when the encounter has stated."
   * element[+]
     * code = #fulfilled
     * display = "Fulfilled"
@@ -49,12 +52,12 @@ Usage: #definition
       * code = #6
       * display = "Alkanut"
       * equivalence = #narrower
-      * comment = "Use Alkanut when the encounter of this Appointment is in progress"
-    * target
+      * comment = "Alkanut actually means that the encounter has already started."
+    * target[+]
       * code = #7
       * display = "Toteutunut"
       * equivalence = #narrower
-      * comment = "Use Toteutunut when the service related to the Appointment has begun or is completed"
+      * comment = "Toteutunut means that the encounter (or other provision of service) has begun or is complete."
   * element[+]
     * code = #cancelled
     * display = "Cancelled"
@@ -74,25 +77,18 @@ Usage: #definition
     * display = "Entered in error"
     * target
       * equivalence = #unmatched
-      * comment = "There is no code for erroneously entered records in the Finnish logical model"
+      * comment = "There is no code for erroneously entered records in the Finnish logical model."
   * element[+]
     * code = #checked-in
     * display = "Checked In"
     * target
       * code = #10
       * display = "Ilmoittautunut"
-      * equivalence = #equivalent
-      * comment = "The Finnish logical model does not separate between arrived and checked-in codes"
+      * equivalence = #equal
   * element[+]
     * code = #waitlist
     * display = "Waitlisted"
     * target
       * code = #1
       * display = "Suunniteltu"
-      * equivalence = #narrower
-      * comment = "Use Suunniteltu when no service provider has been identified"
-    * target[+]
-      * code = #2
-      * display = "Tilattu"
-      * equivalence = #narrower
-      * comment = "Use Tilattu when a service provider has been identified"
+      * equivalence = #equivalent

@@ -1,0 +1,1 @@
+The encounter has ended.

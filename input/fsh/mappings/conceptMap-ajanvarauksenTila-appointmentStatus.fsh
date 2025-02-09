@@ -18,15 +18,22 @@ Usage: #definition
       * code = #waitlist
       * display = "Waitlisted"
       * equivalence = #equivalent
-      * comment = "In FHIR there is no distinction between Suunniteltu and Tilattu. The distinction is that in Tilattu the service provider has been identified."
+      * comment = "Patient and need have been identified, the service provider and time have not."
   * element[+]
     * code = #2
     * display = "Tilattu"
     * target
-      * code = #waitlist
-      * display = "Waitlisted"
-      * equivalence = #wider
-      * comment = "In FHIR there is no distinction between Suunniteltu and Tilattu. The distinction is that in Tilattu the service provider has been identified."
+      * code = #proposed
+      * display = "Proposed"
+      * equivalence = #equivalent
+      * comment = "Differs from Suunniteltu in that in Tilattu the service provider has been identified."
+  * element[+]
+    * code = #8
+    * display = "Ehdotettu"
+    * target
+      * code = #pending
+      * display = "Pending"
+      * equivalence = #equal
   * element[+]
     * code = #3
     * display = "Varattu"
@@ -45,48 +52,36 @@ Usage: #definition
     * code = #5
     * display = "Siirretty"
     * target
-      * equivalence = #unmatched
-      * comment = "There is no status for rescheduled appointments in FHIR. This code SHOULD be mapped to cancelled, if required. Note that this code is deprecated."
-  * element[+]
-    * code = #6
-    * display = "Alkanut"
-    * target
-      * code = #arrived
-      * display = "Arrived"
-      * equivalence = #inexact
-      * comment = "There is no status for an appointment being in process in FHIR. In FHIR this information is tracked with the status of the Encounter resource."
-  * element[+]
-    * code = #7
-    * display = "Toteutunut"
-    * target
-      * code = #fulfilled
-      * display = "Fulfilled"
-      * equivalence = #inexact
-      * comment = "There is no status for an appointment being in process in FHIR. In FHIR this information is tracked with the status of the Encounter resource."
-  * element[+]
-    * code = #8
-    * display = "Ehdotettu"
-    * target[0]
-      * code = #proposed
-      * display = "Proposed"
-      * equivalence = #narrower
-      * comment = "The code proposed can be used to highlight that none of the participants have finalized their acceptance, or that there is still uncertainty about the time."
-    * target[+]
-      * code = #pending
-      * display = "Pending"
-      * equivalence = #equivalent
-      * comment = "The code pending is a  more generic match to Ehdotettu."
-  * element[+]
-    * code = #9
-    * display = "Saapumatta"
-    * target
-      * code = #noshow
-      * display = "No Show"
-      * equivalence = #equal
+      * code = #cancelled
+      * equivalence = #wider
+      * comment = "There is no separate status code in FHIR for rescheduled appointments. Note that this code is deprecated."
   * element[+]
     * code = #10
     * display = "Ilmoittautunut"
     * target
       * code = #checked-in
       * display = "Checked In"
+      * equivalence = #equal
+  * element[+]
+    * code = #6
+    * display = "Alkanut"
+    * target
+      * code = #fulfilled
+      * display = "Fulfilled"
+      * equivalence = #wider
+      * comment = "Alkanut means that the encounter has begun and is ongoing. Most FHIR systems track this with the Encounter resource. There is no such state in Appointment."
+  * element[+]
+    * code = #7
+    * display = "Toteutunut"
+    * target
+      * code = #fulfilled
+      * display = "Fulfilled"
+      * equivalence = #wider
+      * comment = "Toteutunut means that the service the appointment is for has started or is complete. Most FHIR systems track this with the Encounter resource. There is no such state in Appointment."
+  * element[+]
+    * code = #9
+    * display = "Saapumatta"
+    * target
+      * code = #noshow
+      * display = "No Show"
       * equivalence = #equal

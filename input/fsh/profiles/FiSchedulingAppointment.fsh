@@ -1,7 +1,7 @@
 Profile: FiSchedulingAppointment
 Parent: Appointment
 Id: fi-scheduling-appointment
-Description: "Base profile for appointment (*ajanvaraus*) in Finnish Scheduling environment. The contents is based on the scheduling appointment specification."
+Description: "Profile for appointment (*ajanvaraus*) in Finnish Scheduling environment."
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -23,13 +23,36 @@ Description: "Base profile for appointment (*ajanvaraus*) in Finnish Scheduling 
     ServiceAdditionalInformation named ServiceAdditionalInformation 0..* and
     TicketNo named TicketNo 0..* and
     TopicId named TopicId 0..1
-* identifier 1..*
-* identifier.value 1..
-* cancelationReason.coding.system = "urn:oid:1.2.246.537.6.126.2008" (exactly)
-* serviceCategory.coding.system = "urn:oid:1.2.246.537.6.88.2008" (exactly)
-* serviceType 1..*
-* serviceType.coding.system = "urn:oid:1.2.246.537.6.49.201501" (exactly)
-* appointmentType.coding.system = "1.2.246.537.6.884.2015" (exactly)
+* cancelationReason.coding.system = "urn:oid:1.2.246.537.6.126"
+* serviceCategory ^slicing.discriminator.type = #exists
+* serviceCategory ^slicing.discriminator.path = "coding"
+* serviceCategory ^slicing.rules = #open
+* serviceCategory contains thlCodedCategory 0..*
+* serviceCategory[thlCodedCategory].coding ^slicing.discriminator.type = #value
+* serviceCategory[thlCodedCategory].coding ^slicing.discriminator.path = "system"
+* serviceCategory[thlCodedCategory].coding ^slicing.rules = #open
+* serviceCategory[thlCodedCategory].coding contains
+    thlType 1..* and
+    hl7Type 0..*
+* serviceCategory[thlCodedCategory].coding[thlType] 1..* 
+* serviceCategory[thlCodedCategory].coding[thlType].system = "urn:oid:1.2.246.537.6.50" 
+* serviceCategory[thlCodedCategory].coding[hl7Type] 0..* 
+* serviceCategory[thlCodedCategory].coding[hl7Type].system = "http://terminology.hl7.org/CodeSystem/service-category" 
+* serviceType ^slicing.discriminator.type = #exists
+* serviceType ^slicing.discriminator.path = "coding"
+* serviceType ^slicing.rules = #open
+* serviceType contains thlCodedType 0..*
+* serviceType[thlCodedType].coding ^slicing.discriminator.type = #value
+* serviceType[thlCodedType].coding ^slicing.discriminator.path = "system"
+* serviceType[thlCodedType].coding ^slicing.rules = #open
+* serviceType[thlCodedType].coding contains
+    thlType 1..* and
+    hl7Type 0..*
+* serviceType[thlCodedType].coding[thlType] 1..* 
+* serviceType[thlCodedType].coding[thlType].system = "urn:oid:1.2.246.537.6.49" 
+* serviceType[thlCodedType].coding[hl7Type] 0..* 
+* serviceType[thlCodedType].coding[hl7Type].system = "http://terminology.hl7.org/CodeSystem/service-type" 
+* appointmentType.coding.system = "1.2.246.537.6.884"
 * reasonCode ^slicing.discriminator.type = #exists
 * reasonCode ^slicing.discriminator.path = "coding"
 * reasonCode ^slicing.rules = #open
@@ -37,10 +60,6 @@ Description: "Base profile for appointment (*ajanvaraus*) in Finnish Scheduling 
     sliceSisaltotarkenne 0..* and
     slicePalvelutarve 0..1
 * reasonCode[sliceSisaltotarkenne].coding 1..1
-* reasonCode[sliceSisaltotarkenne].coding.version ..0
-* reasonCode[sliceSisaltotarkenne].coding.userSelected ..0
-* reasonCode[sliceSisaltotarkenne].text ..0
-* reasonCode[slicePalvelutarve].coding ..0
 * reasonCode[slicePalvelutarve].text 1..
 * reasonReference only Reference(Condition)
 * reasonReference ^type.aggregation = #contained
