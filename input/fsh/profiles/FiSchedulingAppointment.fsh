@@ -10,10 +10,10 @@ Description: "Base profile for appointment (*ajanvaraus*) in Finnish Scheduling 
     AppointmentMutability named AppointmentMutability 0..1 and
     CareGuaranteeDetails named CareGuaranteeDetails 0..1 and
     CareplanIdentifier named CareplanIdentifier 0..* and
+    ChildAppointment named ChildAppointment 0..1 and
     CustomerJourney named CustomerJourney 0..* and
     NotificationInfo named NotificationInfo 0..* and
     NotificationMedium named NotificationMedium 0..* and
-    ParentAppointment named ParentAppointment 0..1 and
     PractitionerGender named PractitionerGender 0..1 and
     QueueNo named QueueNo 0..* and
     ReferralId named ReferralId 0..* and
