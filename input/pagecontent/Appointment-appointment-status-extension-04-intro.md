@@ -1,0 +1,1 @@
+The patient moves the appointment to another time. This appointment is cancelled and a new one is created.

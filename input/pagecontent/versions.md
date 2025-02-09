@@ -23,9 +23,19 @@ information in a single implementation guide.
 
 The old implementation guides in Simplifier may still be a useful reference. 
 
+### Notable Changes
+Notable changes from the previous implementation guides include
+* The Appointment state has been reworked. The old specification was not compatible with the base
+  FHIR specification. This implementation guide includes a mapping table showing how the state of
+  the Appointment resource type in FHIR maps to the Finnish logical model.
+* The scope of extensions have been checked and largely relaxed to allow use of the extensions more
+  widely.
+* **The canonical urls of profiles and extensions have been changed!** The urls now point to this
+  implementation guide and resolve.
+
 ### This Implementation Guide
 
-Version 1.0.0 is the first official release of this consolidated implementation guide. See the
+Version 2.0.0 is the first official release of this consolidated implementation guide. See the
 history of published versions in the
 [publication directory](https://hl7.fi/fhir/finnish-scheduling/history.html).
 

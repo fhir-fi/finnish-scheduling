@@ -1,0 +1,1 @@
+The service provider has been identified (it could be just an organization, not necessarily a practiotioner yet).

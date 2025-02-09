@@ -1,9 +1,9 @@
-Instance: example-patient
+Instance: patient-pentti
 InstanceOf: Patient
 Usage: #example
-* meta.lastUpdated = "2021-03-02T11:06:59.579+00:00"
+* id = "patient-pentti"
 * extension.url = "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/municipality-code"
-* extension.valueCoding = urn:oid:1.2.246.537.6.21.2003#564 "Oulu"
+* extension.valueCoding = urn:oid:1.2.246.537.6.21#564 "Oulu"
 * identifier.use = #official
 * identifier.system = "urn:oid:1.2.246.21"
 * identifier.value = "010101-123N"
@@ -14,4 +14,8 @@ Usage: #example
 * contact.name.given = "Pappa"
 * contact.telecom.system = #sms
 * contact.telecom.value = "+3581234567"
-* communication.language = urn:oid:1.2.246.537.5.40175#FI "Suomi"
+* communication.language
+  * coding = urn:oid:1.2.246.537.5.40175#FI "Suomi"
+  * coding[+] = urn:ietf:bcp:47#fi 
+  * text = "Suomi"
+  

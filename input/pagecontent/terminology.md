@@ -39,7 +39,17 @@ No NamingSystems are defined by this implementation guide.
 {% endif %}
 
 ### Other Terminologies
+The Finnish core concepts for scheduling are defined in
+[Sosiaali- ja terveydenhuollon ajanvarauspalvelujen ja palveluohjauksen käsitteet](https://urn.fi/URN:NBN:fi-fe2024060343030)
 
-There are also many other notable terminologies used in Finland. Please see the
-[terminology section of the Finnish FHIR Base Profiles](https://hl7.fi/fhir/finnish-base-profiles/terminology.html)
-specification. 
+The content format for the appointment booking document (*ajanvarausasiakirja*) is defined in
+[Ajanvarausasiakirjan tietosisältömäärittely](https://termeta.thl.fi/termeta/document-definitions/list/search).
+
+Relevant code sets in the national code server (besides the [Ajanvarauksen tila](#conceptmaps) described above) include
+* [THL - Yhteystapa](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=4446&versionKey=5151)
+* [THL - Viestintäkanava](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=2004&versionKey=2264)
+* [Ajanvaraus - Yhteyshenkilön tyyppi](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1944&versionKey=2204)
+
+There are many other terminologies used in Finland. Please see the list of some promonent ones in
+the [terminology section](https://hl7.fi/fhir/finnish-base-profiles/terminology.html) of the
+Finnish FHIR Base Profiles specification.

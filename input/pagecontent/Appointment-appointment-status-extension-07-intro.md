@@ -1,0 +1,1 @@
+The patient has arrived to location.

@@ -10,12 +10,12 @@ This list includes the extensions for scheduling related profiles defined by HL7
 </ul>
 
 {:.stu-note}
-All of these extensions have been defined in earlier implementation guides. The canonical URLs of
+Many of these extensions have been defined in earlier implementation guides. The canonical URLs of
 the extensions have been modified slightly, mainly to be in the `https` space, rather than `http`.
 Implementer feedback is welcome at this stage to help evaluate whether this is a welcome change
 and regarding implementation efforts.
 Also the names of the extensions have been changed to be more descriptive. Implementer feedback is
-welcome at this stage to help evaluate whether this is a welcome change and regarding
+welcome at this stage to help evaluate whether this is a welcome change, and regarding
 implementation efforts.
 
 The earlier versions of these extensions can be cound at
