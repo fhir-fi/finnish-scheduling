@@ -23,6 +23,51 @@ publisher:
 dependencies:
   hl7.fhir.fi.base: latest
 
+resources: 
+  Appointment/605790:
+    name: Appointment example 1
+    description: Example appointment
+  Appointment/appointment-status-extension-01:
+    name: Appointment example 2, Waitlisted / Suunniteltu
+  Appointment/appointment-status-extension-02:
+    name: Appointment example 2, Proposed / Tilattu
+  Appointment/appointment-status-extension-03:
+    name: Appointment example 2, Pending / Ehdotettu
+  Appointment/appointment-status-extension-04:
+    name: Appointment example 2, Cancelled / Peruttu
+  Appointment/appointment-status-extension-05:
+    name: Appointment example 3, Proposed / Tilattu
+  Appointment/appointment-status-extension-06:
+    name: Appointment example 3, Booked / Varattu
+  Appointment/appointment-status-extension-07:
+    name: Appointment example 3, Arrived / Varattu
+  Appointment/appointment-status-extension-08:
+    name: Appointment example 3, Checked In / Ilmoittautunut
+  Appointment/appointment-status-extension-09:
+    name: Appointment example 3, Fulfilled / Alkanut
+  Appointment/appointment-status-extension-10:
+    name: Appointment example 3, Fulfilled / Toteutunut
+  Appointment/example-appointment-4:
+    name: Appointment example 4
+    description: Example appointment
+  HealthcareService/example-service-2:
+    name: Isyyden selvittäminen
+    description: Example healthcare service
+  Organization/example-org-unit:
+    name: Esimerkki-Palveluyksikkö
+    description: Example organization unit
+  Patient/patient-pentti:
+    name: Pentti Potilas
+    description: Example patient 2
+  Patient/patient-petri:
+    name: Petri Potilas
+    description: Example patient 3
+  Practitioner/practitioner-keijo:
+    name: Keijo Kätilö
+    description: Example practitioner 2
+  Slot/123456789:
+    name: Slot example
+
 pages:
   index.md:
     title: Home

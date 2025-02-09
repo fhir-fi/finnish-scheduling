@@ -44,7 +44,7 @@ Usage: #definition
       * code = #6
       * display = "Alkanut"
       * equivalence = #inexact
-      * comment = "There is the status `Alkanut` for when the encounter has stated."
+      * comment = "There is the status Alkanut for when the encounter has stated."
   * element[+]
     * code = #fulfilled
     * display = "Fulfilled"
@@ -52,12 +52,12 @@ Usage: #definition
       * code = #6
       * display = "Alkanut"
       * equivalence = #narrower
-      * comment = "`Alkanut` actually means that the encounter has already started."
+      * comment = "Alkanut actually means that the encounter has already started."
     * target[+]
       * code = #7
       * display = "Toteutunut"
       * equivalence = #narrower
-      * comment = "`Toteutunut` means that the encounter (or other provision of service) has begun or is complete."
+      * comment = "Toteutunut means that the encounter (or other provision of service) has begun or is complete."
   * element[+]
     * code = #cancelled
     * display = "Cancelled"

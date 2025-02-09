@@ -26,7 +26,7 @@ Usage: #definition
       * code = #proposed
       * display = "Proposed"
       * equivalence = #equivalent
-      * comment = "Differs from *Suunniteltu* in that in *Tilattu* the service provider has been identified."
+      * comment = "Differs from Suunniteltu in that in Tilattu the service provider has been identified."
   * element[+]
     * code = #8
     * display = "Ehdotettu"
@@ -54,7 +54,7 @@ Usage: #definition
     * target
       * code = #cancelled
       * equivalence = #wider
-      * comment = "There is no status code in FHIR for rescheduled appointments. Note that this code is deprecated."
+      * comment = "There is no separate status code in FHIR for rescheduled appointments. Note that this code is deprecated."
   * element[+]
     * code = #10
     * display = "Ilmoittautunut"
@@ -69,7 +69,7 @@ Usage: #definition
       * code = #fulfilled
       * display = "Fulfilled"
       * equivalence = #wider
-      * comment = "*Alkanut* means that the encounter has begun and is ongoing. Most FHIR systems track this with the Encounter resource. There is no such state in Appointment."
+      * comment = "Alkanut means that the encounter has begun and is ongoing. Most FHIR systems track this with the Encounter resource. There is no such state in Appointment."
   * element[+]
     * code = #7
     * display = "Toteutunut"
@@ -77,7 +77,7 @@ Usage: #definition
       * code = #fulfilled
       * display = "Fulfilled"
       * equivalence = #wider
-      * comment = "*Toteutunut* means that the service the appointment is for has started or is complete. Most FHIR systems track this with the Encounter resource. There is no such state in Appointment."
+      * comment = "Toteutunut means that the service the appointment is for has started or is complete. Most FHIR systems track this with the Encounter resource. There is no such state in Appointment."
   * element[+]
     * code = #9
     * display = "Saapumatta"

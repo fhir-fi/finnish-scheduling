@@ -7,8 +7,8 @@
       "coding": [
         {
           "system": "urn:oid:1.2.246.537.6.50.201801",
-          "code": "SOTE19",
-          "display": "Perheoikeudelliset palvelut"
+          "code": "SOTE19.2",
+          "display": "Isyyden selvittäminen"
         }
       ]
     }
@@ -30,8 +30,14 @@
         "system": "urn:oid:1.2.246.537.6.884.2015",
         "code": "10",
         "display": "Kertakäynti toimipaikassa"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+        "code": "ROUTINE",
+        "display": "Routine appointment - default if not valued"
       }
-    ]
+    ],
+    "text": "Kertakäynti toimipaikassa"
   },
   "start": "2020-01-01T12:00:00+02:00",
   "end": "2020-01-01T12:30:00+02:00",
@@ -87,7 +93,7 @@
     },
     {
       "actor": {
-        "reference": "HealthcareService/example",
+        "reference": "HealthcareService/example-service-2",
         "display": "Lastenvalvojan vastaanotto"
       },
       "status": "accepted"

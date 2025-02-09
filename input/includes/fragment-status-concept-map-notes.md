@@ -14,12 +14,12 @@ The FHIR specification uses the Appoinment resource to track information on sche
 administrative purposes, and in general for prepapring for the encounter. In FHIR, the Encounter
 resource is used to track the encounter, and any clinically relevant information (see
 [Appointment Statuses and Encounters](https://hl7.org/fhir/R4B/appointment.html#statuses)). In
-FHIR, when an encounter starts, its state is tracked with the
+FHIR, when an encounter starts, its status is tracked with the
 [Encounter](https://hl7.org/fhir/R4B/encounter.html) resource, and no longer with the
 [Appointment](https://hl7.org/fhir/R4B/appointment.html). The Finnish logical model does not make
 such a distinction between the appointment and the encounter.
 
-The Finnish logical model does not have a separate state for when the patient has arrived (FHIR
+The Finnish logical model does not have a separate status for when the patient has arrived (FHIR
 status
 [arrived](https://hl7.org/fhir/R4/codesystem-appointmentstatus.html#appointmentstatus-arrived)).
 It does have a code
@@ -37,3 +37,6 @@ The Finnish logical model used to have a separate code for an appointment that h
 but that code is now deprecated.
 
 The Finnish logical model does not have any code for appointments that have been entered in error.
+
+The *Ajanvarauksen tila* codes can be added using the
+[Ajanvarauksen tila](StructureDefinition-ajanvarauksen-tila.html) extension to `Appoinment.status`.
