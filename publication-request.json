@@ -1,11 +1,11 @@
 {
   "package-id" : "hl7.fhir.fi.scheduling",
-  "version" : "2.0.0-rc1",
-  "path" : "https://hl7.fi/fhir/finnish-scheduling/2.0.0-rc1",
-  "mode" : "milestone",
-  "status" : "ballot",
+  "version" : "2.0.1-ci",
+  "path" : "https://hl7.fi/fhir/finnish-scheduling/2.0.1-ci",
+  "mode" : "working",
+  "status" : "draft",
   "sequence" : "STU 2",
-  "desc" : "First release candidate for 2.0.0",
-  "descmd" : "First release candidate for 2.0.0.",
+  "desc" : "Continuous integration build for STU2",
+  "descmd" : "Continuous integration build for STU2.",
   "first" : "false"
 }
