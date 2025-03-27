@@ -12,6 +12,8 @@ This list includes the extensions for scheduling related profiles defined by HL7
 {:.stu-note}
 Many of these extensions have been defined in earlier implementation guides. The canonical URLs of
 the extensions have been modified slightly, mainly to be in the `https` space, rather than `http`.
+Implementer feedback is welcome at this stage to help evaluate whether this is a welcome change
+and regarding implementation efforts.
 Also the names of the extensions have been changed to be more descriptive. Implementer feedback is
 welcome at this stage to help evaluate whether this is a welcome change, and regarding
 implementation efforts.
@@ -35,7 +37,7 @@ Finland. Most notably the ones for the national Kanta system, in several impleme
 * [Kanta yhteiset FHIR- ja REST-rajapintamäärittelyt](https://simplifier.net/kanta-yhteiset-fhir)
   includes definitions shared by several other Kanta implementation guides.
 * [Kanta Potilastiedon arkiston FHIR R4](https://simplifier.net/kanta-potilastiedon-arkiston-fhir-r4)
-  included specifications for patient data stored in Kanta.
+  includes specifications for patient data stored in Kanta.
 * [Kanta FHIR Prescription R4](https://simplifier.net/PrescriptionR4) includes specifications for
   data on prescriptions
 * [Kanta sosiaalihuolto R4](https://simplifier.net/Kanta-sosiaalihuolto-R4) includes specifications
