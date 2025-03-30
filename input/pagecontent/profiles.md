@@ -16,7 +16,10 @@ published and maintained by HL7 Finland.
 ### Other Finnish Profiles
 
 Please also note the
-[Finnish Base Profiles](https://hl7.fi/fhir/finnish-base-profiles/extensions.html) and the
+[Finnish Base Profiles](https://hl7.fi/fhir/finnish-base-profiles/extensions.html) that many of
+these profiles reference and depend on.
+
+You may also be interested in the
 [Finnish Implementation Guide for SMART App Launch](https://hl7.fi/fhir/finnish-smart/).
 
 In addition to the profiles published by HL7 Finland, there are also other extensions used in
@@ -25,7 +28,7 @@ Finland. Most notably the ones for the national Kanta system, in several impleme
 * [Kanta yhteiset FHIR- ja REST-rajapintamäärittelyt](https://simplifier.net/kanta-yhteiset-fhir)
   includes definitions shared by several other Kanta implementation guides.
 * [Kanta Potilastiedon arkiston FHIR R4](https://simplifier.net/kanta-potilastiedon-arkiston-fhir-r4)
-  included specifications for patient data stored in Kanta.
+  includes specifications for patient data stored in Kanta.
 * [Kanta FHIR Prescription R4](https://simplifier.net/PrescriptionR4) includes specifications for
   data on prescriptions
 * [Kanta sosiaalihuolto R4](https://simplifier.net/Kanta-sosiaalihuolto-R4) includes specifications
