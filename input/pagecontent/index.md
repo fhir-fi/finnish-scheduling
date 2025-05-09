@@ -27,16 +27,37 @@ resource.
 [IHE](https://github.com/IHE/ITI.Scheduling/) seem to head more into the "Hospital Scheduling" mode
 with operations rather than direct REST calls.
 
-In Finland also the first one, the "Outlook Style", is used.
+In Finland the first one, the "Outlook Style", has been adopted more widely.
 
+### Scope of this Implementation Guide
+
+This implementation guide is not an API specification. Rather, it is a continuation of the
+profiling efforts of HL7 Finland. The aims are
+* to adapt the international FHIR specification to requirements specific to Finnish ecosystem
+* to avoid divergence of systems and to lower cost of implementations by harmonizing what is common
+  between Finnish implementations
+* to educate all parties in the local ecosystem of existing implementations and design choices
+  taken when implementing them.
+
+Products and platforms like the ones listed below are expected to publish their own API
+specifications.
 
 ### Notable Implementations in Finland
+
+#### Apotti
+
+[Apotti](https://www.apotti.fi/en/), an [Epic](https://www.epic.com/) installation in Finland has
+Epic's existing FHIR APIs for scheduling.
 
 #### CGI
 
 The [OMNI360](https://www.cgi.com/fi/fi/tuoteratkaisut/omni360) by CGI Finland is one of the
 prominent Finnish electronic health record systems and has several native FHIR APIs. It offers a
 native FHIR API for scheduling.
+
+CGI also offers scheduling services (*Palveluohjain*, previously also known as *AVPH*) as part of
+a separate platform,
+[*Sähköinen asiointipalvelu*](https://www.cgi.com/fi/fi/tuoteratkaisut/sahkoinen-asiointialusta).
 
 #### EskoSystems
 
