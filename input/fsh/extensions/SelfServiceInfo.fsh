@@ -1,7 +1,7 @@
 Extension: SelfServiceInfo
 Id: self-service-info
 Title: "Self Service Information"
-Description: "Extension that notifies whether there is a self service for managing appointment (provides URL and information on whether management can be made by proxy)."
+Description: "Extension that notifies whether there is a self-service for managing appointment (provides URL and information on whether management can be made by proxy)."
 Context: Appointment
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

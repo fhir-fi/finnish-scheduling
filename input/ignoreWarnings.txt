@@ -6,3 +6,10 @@
 
 # The Finnish oid based terminologies are not published as FHIR terminologies, at least yet.
 %A definition for CodeSystem 'urn:oid:1.2.246.537%
+%URL value 'urn:oid:1.2.246.537.%
+URL value 'urn:oid:1.2.246.21' does not resolve
+%URL value 'https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey%
+
+# These are intentional mock values
+URL value 'urn:oid:1.2.246.10.12345678.22.2023' does not resolve
+URL value 'http://organisaationmaarittelemanimiavaruus.fi' does not resolve
