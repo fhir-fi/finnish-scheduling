@@ -7,7 +7,7 @@ guide on [FHIR R5](https://hl7.org/fhir/R5/).
 
 {% include dependency-table-short.xhtml %}
 
-The guide is based on two earlier implementation guides.
+The guide is based on two earlier implementation guides:
 * [FinnishScheduling R4](https://simplifier.net/finnishschedulingr4/), published in 2020, presented
   the Finnish logical model for appointments in FHIR.
 * [FinnishAppointment](https://simplifier.net/finnishappointment), published in 2021, concentrated
@@ -32,7 +32,7 @@ In Finland the first one, the "Outlook Style", has been adopted more widely.
 ### Scope of this Implementation Guide
 
 This implementation guide is not an API specification. Rather, it is a continuation of the
-profiling efforts of HL7 Finland. The aims are
+profiling efforts of HL7 Finland. The aims are:
 * to adapt the international FHIR specification to requirements specific to Finnish ecosystem
 * to avoid divergence of systems and to lower cost of implementations by harmonizing what is common
   between Finnish implementations
@@ -59,7 +59,7 @@ CGI also offers scheduling services (*Palveluohjain*, previously also known as *
 a separate platform,
 [*Sähköinen asiointipalvelu*](https://www.cgi.com/fi/fi/tuoteratkaisut/sahkoinen-asiointialusta).
 
-#### EskoSystems
+#### Esko Systems
 
 The [Esko APTJ](https://eskosystems.fi/tuoteperhe/integraatiot/) by Esko Systems is also one of the
 prominent Finnish electronic health record systems. It uses several FHIR APIs internally and to
@@ -81,8 +81,8 @@ overlapping bookings and to ensure fluent care paths for patients.
 
 [Omaolo](https://www.omaolo.fi) is a collection of services developed by DigiFinland, a publicly
 funded company. Omaolo has a fully HL7 FHIR based personal health record platform as its core. It
-also uses FHIR scheduling to communicate with electronic health record systems and other third
-party implementations.
+also uses FHIR scheduling to communicate with electronic health record systems and other
+third-party implementations.
 
 ### Other Guides and Links
 
@@ -133,7 +133,7 @@ The team involved in creating the first version of the specification includes
 * Tero Pekkola, Esko Systems Oy
 
 Each published major version of this implementation guide goes through the ballot and voting
-processes of HL7 Finland, and then represents the consensus view of the Finnish FHIR community.
+processes of HL7 Finland and then represents the consensus view of the Finnish FHIR community.
 
 ### Collaboration
 
@@ -154,9 +154,9 @@ or additions and to discuss them publicly.
 
 #### Open a Pull Request in GitHub
 
-Pull requests are even better. If you are in a position to suggest how exactly your proposal should
-be implemented in the specification, do it! It helps the team maintaining the implementation guide
-a great deal.
+Pull requests are even better. If you are able to suggest how exactly your proposal should be
+implemented in the specification, do it! It helps the team maintaining the implementation guide a
+great deal.
 
 #### Participate in IG Development and Maintenance
 
@@ -164,7 +164,7 @@ Please also consider joining the development effort. This is the best way to aff
 the profiling work. You may even be compensated for your efforts. Please be in touch with HL7
 Finland to discuss options, if this even remotely interesting for you.
 
-The best implementation guide is the one that reflects the views and the consensus of the whole
+The best implementation guide is the one that reflects the views and the consensus of the entire
 FHIR community!
 
 ### Safety Considerations
@@ -179,7 +179,7 @@ data security regulations, its use does not guarantee compliance with these regu
 compliance must be ensured by appropriate measures during implementation projects and in daily
 operations. The corresponding implementation measures are explained in the standard. In addition,
 the present specification can only influence compliance with the security regulations in the
-technical area of standardisation. It cannot influence organisational and contractual matters.
+technical area of standardization. It cannot influence organizational and contractual matters.
 
 ### License and Legal Terms 
 
