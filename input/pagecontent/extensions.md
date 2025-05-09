@@ -16,7 +16,7 @@ Also the names of the extensions have been changed to be more descriptive. Imple
 welcome at this stage to help evaluate whether this is a welcome change, and regarding
 implementation efforts.
 
-The earlier versions of these extensions can be cound at
+The earlier versions of these extensions can be found at
 [FinnishAppoinment](https://simplifier.net/finnishappointment/~resources?category=Extension&sortBy=DisplayName)
 and
 [FinnishScheduling R4](https://simplifier.net/finnishschedulingr4/~resources?category=Extension&sortBy=DisplayName)

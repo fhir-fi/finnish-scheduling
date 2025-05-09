@@ -44,7 +44,7 @@ Usage: #definition
       * code = #6
       * display = "Alkanut"
       * equivalence = #inexact
-      * comment = "There is the status Alkanut for when the encounter has stated."
+      * comment = "There is the status Alkanut for when the encounter has started."
   * element[+]
     * code = #fulfilled
     * display = "Fulfilled"
@@ -76,7 +76,7 @@ Usage: #definition
     * code = #entered-in-error
     * display = "Entered in error"
     * target
-      * equivalence = #unmatched
+      * equivalence = #disjoint
       * comment = "There is no code for erroneously entered records in the Finnish logical model."
   * element[+]
     * code = #checked-in
