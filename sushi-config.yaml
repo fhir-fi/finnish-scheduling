@@ -9,7 +9,7 @@ name: FinnishScheduling
 title: Finnish Scheduling
 description: Finnish HL7 FHIR implementation guide for scheduling, published and maintained by HL7 Finland
 status: draft # draft | active | retired | unknown
-version: 2.0.0-rc2
+version: 2.0.0-rc3
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2020+
 releaseLabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
