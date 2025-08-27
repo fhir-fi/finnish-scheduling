@@ -1,11 +1,11 @@
 {
   "package-id" : "hl7.fhir.fi.scheduling",
-  "version" : "2.0.0-rc2",
-  "path" : "https://hl7.fi/fhir/finnish-scheduling/2.0.0-rc2",
+  "version" : "2.0.0-rc3",
+  "path" : "https://hl7.fi/fhir/finnish-scheduling/2.0.0-rc3",
   "mode" : "milestone",
   "status" : "ballot",
   "sequence" : "STU 2",
-  "desc" : "Second release candidate for 2.0.0",
-  "descmd" : "Second release candidate for 2.0.0.",
+  "desc" : "Third release candidate for 2.0.0",
+  "descmd" : "Third release candidate for 2.0.0. Development is stalled for now.",
   "first" : "false"
 }
