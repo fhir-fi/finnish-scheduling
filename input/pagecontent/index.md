@@ -15,6 +15,18 @@ The guide is based on two earlier implementation guides:
 
 The [history page](versions.html) offers more historical context.
 
+<div class="stu-note" id="development-stalled">
+<h4>Development of this implementation guide has been stalled before official publication.</h4>
+<p>The Finnish FHIR community agrees that this implementation guide does not properly address the
+needs for interoperability in scheduling in Finland. See the <a
+href="https://github.com/fhir-fi/finnish-scheduling/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22ballot%20comment%22"
+>ballot comments</a> for details.</p>
+<p>At the moment (summer of 2025) there is not enough interest in the community to continue work on
+the guide.</p>
+<p>The implementation guide has been deliberately left in ballot state to reflect this decision,
+and to wait for it to perhaps be picked up some time in the future.</p>
+</div>
+
 See also [all FHIR implementation guides published by HL7 Finland](https://hl7.fi/fhir/).
 
 ### Two Modes for Scheduling
